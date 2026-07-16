@@ -1,0 +1,31 @@
+
+/*--------------------------------------------------*/
+/*Catch Me Game*/
+/*Created by Cvetoslav Krumov*/
+/*2026*/
+
+/*Portfolio Project*/
+
+/*Copyright (c) 2026 Cvetoslav Krumov*/
+/*All Rights Reserved.*/
+
+/*This project is published for educational and portfolio purposes only.*/
+
+/*Unauthorized copying, redistribution or claiming this project as your own is prohibited.*/
+/*--------------------------------------------------*/
+
+
+.form-group #gameOver{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f30d0d;
+}
+
+#btnCatchMe {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 120px;
+    height: 45px;
+}
