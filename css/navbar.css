@@ -1,0 +1,30 @@
+/*--------------------------------------------------*/
+/*Catch Me Game*/
+/*Created by Cvetoslav Krumov*/
+/*2026*/
+
+/*Portfolio Project*/
+
+/*Copyright (c) 2026 Cvetoslav Krumov*/
+/*All Rights Reserved.*/
+
+/*This project is published for educational and portfolio purposes only.*/
+
+/*Unauthorized copying, redistribution or claiming this project as your own is prohibited.*/
+/*--------------------------------------------------*/
+
+#navbar {
+    list-style-type: none;
+}
+#navbar a {
+    font-size: 26px;
+    text-decoration: none;
+    color: #00FF00;
+}
+#navbar li {
+    margin: 5px;
+}
+
+#navbar a:hover {
+
+}
