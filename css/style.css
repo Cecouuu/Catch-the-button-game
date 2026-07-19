@@ -1,0 +1,45 @@
+/*--------------------------------------------------*/
+/*Catch Me Game*/
+/*Created by Cvetoslav Krumov*/
+/*2026*/
+
+/*Portfolio Project*/
+
+/*Copyright (c) 2026 Cvetoslav Krumov*/
+/*All Rights Reserved.*/
+
+/*This project is published for educational and portfolio purposes only.*/
+
+/*Unauthorized copying, redistribution or claiming this project as your own is prohibited.*/
+/*--------------------------------------------------*/
+
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --primary-color: #3b82f6;
+    --secondary-color: #1e293b;
+
+    --background-color: #0f172a;
+    --card-color: #1e293b;
+
+    --text-color: #ffffff;
+    --text-secondary: #94a3b8;
+
+    --border-radius: 14px;
+
+    --transition: .3s ease;
+
+    --container-width: 1200px;
+
+    --shadow:
+            0 15px 35px rgba(0,0,0,.25);
+
+    --font-main: "Poppins", sans-serif;
+}
