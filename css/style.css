@@ -23,23 +23,35 @@
 }
 
 :root{
-    --primary-color: #3b82f6;
-    --secondary-color: #1e293b;
+    --primary-green:#00FF00;
+    --secondary-green:#7CFC00 ;
+    --accent-green:#00FA9A;
+    --background-color: oklch(0.3251 0.0219 132.96);
+    /*oklch(0.708 0 0);*/
+    --primary-button:
+        linear-gradient(
+            165deg,
+            rgba(0, 255, 0, 1) 0%,
+            rgba(124, 252, 0, 1) 50%,
+            rgba(0, 250, 154, 1) 100%
+        );
+    --secondary-button: rgba(255, 255, 255, 0.82);
+    --secondary-button-hover: rgba(255, 255, 255);
+    --transition: 0.2s;
+    --main-font-color: #f6f6f6;
+    --font-family: Orbitron, sans-serif;
+    --font-size: 16px;
+    --btn-border-radius: 11px;
+    --hero-btns-padding: 15px 44px;
+    --feature-card-radius: 18px;
+}
 
-    --background-color: #0f172a;
-    --card-color: #1e293b;
-
-    --text-color: #ffffff;
-    --text-secondary: #94a3b8;
-
-    --border-radius: 14px;
-
-    --transition: .3s ease;
-
-    --container-width: 1200px;
-
-    --shadow:
-            0 15px 35px rgba(0,0,0,.25);
-
-    --font-main: "Poppins", sans-serif;
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--main-font-color);
+    min-height: 100vh;
 }
