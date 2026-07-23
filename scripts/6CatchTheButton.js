@@ -65,7 +65,7 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
         {
             name: `Easy mode`,
             storageKey: "easyHighScore",
-            time: 3,
+            time: 40,
             highScore: 0,
             difficulties: [
                 {
@@ -336,7 +336,7 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
         }
 
         function resetGame (){
-
+            clearInterval(timer);
             resetBtnSize();
 
             points = 0;
