@@ -51,14 +51,17 @@ body{
     min-height: 100vh;
 }
 
+header{
+    position: sticky;
+    top: 0;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgb(2 10 20 / 0.94);
     padding: 0 35px;
-    position: sticky;
-    top: 0;
     height: 10vh;
     z-index: 1000;
 }
@@ -67,6 +70,7 @@ nav a{
 }
 .logo{
     display: flex;
+    cursor: pointer;
     gap: 10px;
     align-items: center;
 }
@@ -104,16 +108,17 @@ nav a{
     padding: 14px 18px;
     border-radius: 14px;
     transform: scale(1);
+    transition: 0.3s;
+    border: 0 solid transparent;
 }
 
 .nav-list li a:hover {
     background: rgba(255, 255, 255, 0.1);
     transition: 0.14s;
-    border: 0 solid;
 }
 .nav-list li:hover{
     transition: 0.14s;
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 .nav-button button{
     width: 100px;
@@ -121,12 +126,15 @@ nav a{
     background: var(--primary-linear-gradient);
     border-radius: var(--btn-border-radius);
     border: 0 solid;
+    transition: all 0.4s;
     transform: scale(1);
 }
 .nav-button button:hover{
-    transform: scale(1.1);
+    transform: scale(1.07);
     transition: 0.4s;
     box-shadow: 0 0 20px 5px var(--primary-green);
+    /* in order: x offset, y offset, blur size, spread size, color */
+    /* blur size and spread size are optional (they default to 0) */
 }
 
 
