@@ -104,17 +104,19 @@ nav a{
 }
 .nav-list li a {
     background: transparent;
-    color: var(--main-font-color);
-    padding: 14px 18px;
+    padding: 13px 20px;
     border-radius: 14px;
     transform: scale(1);
     transition: 0.3s;
     border: 0 solid transparent;
 }
-
+.nav-list li a button{
+    background: transparent;
+    border: 0 solid;
+    color: var(--main-font-color);
+}
 .nav-list li a:hover {
     background: rgba(255, 255, 255, 0.1);
-    transition: 0.14s;
 }
 .nav-list li:hover{
     transition: 0.14s;
@@ -126,13 +128,13 @@ nav a{
     background: var(--primary-linear-gradient);
     border-radius: var(--btn-border-radius);
     border: 0 solid;
-    transition: all 0.4s;
+    transition: 0.4s;
     transform: scale(1);
 }
 .nav-button button:hover{
     transform: scale(1.07);
     transition: 0.4s;
-    box-shadow: 0 0 20px 5px var(--primary-green);
+    box-shadow: 0 0 25px 5px var(--primary-green);
     /* in order: x offset, y offset, blur size, spread size, color */
     /* blur size and spread size are optional (they default to 0) */
 }
