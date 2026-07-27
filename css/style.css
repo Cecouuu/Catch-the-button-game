@@ -50,7 +50,7 @@ body{
     color: var(--main-font-color);
     min-height: 100vh;
 }
-
+/*navigation*/
 header{
     position: sticky;
     top: 0;
@@ -134,5 +134,6 @@ nav a{
     /* in order: x offset, y offset, blur size, spread size, color */
     /* blur size and spread size are optional (they default to 0) */
 }
+
 
 

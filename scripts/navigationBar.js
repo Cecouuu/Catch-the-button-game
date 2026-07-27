@@ -27,17 +27,20 @@ const navBarButtons = [
 ]
 
 navBarButtons.forEach(function (button){
-    button.addEventListener("click",function (){
+    button.btn.addEventListener(`click`,function (){
         btnSelection(button.btn, button.section);
     });
 })
 
-function btnSelection(buttonOnNavigationBar,sectionPage,){
+function btnSelection(buttonOnNavBar,sectionPage,){
     for(let i = 0; i < navBarButtons.length; i++){
-        buttonOnNavigationBar.style.backgroundColor = "transparent";
+        navBarButtons[i].btn.style.backgroundColor = "transparent";
+        navBarButtons[i].section.style.display = "none";
+        navBarButtons[i].btn.style.border = "0 solid transparent"
+
     }
-    buttonOnNavigationBar.style.color = "red";
-    buttonOnNavigationBar.style.backgroundColor = "#00B7B5";
-    buttonOnNavigationBar.style.backgroundBlur = "20px";
-    buttonOnNavigationBar.style.border = "1px solid #00B7B5";
+    sectionPage.style.display = "flex";
+    buttonOnNavBar.style.transform = "scale(1.1)"
+    buttonOnNavBar.style.backgroundColor = `rgba(0, 255, 242, 0.08)`;
+    buttonOnNavBar.style.border = "1px solid #14B8A6FF";
 }
