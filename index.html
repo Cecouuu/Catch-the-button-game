@@ -25,10 +25,10 @@
 
                     <div class="navigation p-0 m-0">
                         <ul class="nav-list">
-                            <li><a href="index.html"><button id="homeBtn">Home</button></a></li>
-                            <li><a href="game.html"><button id="gameBtn">Game</button></a></li>
-                            <li><a href="about.html"><button id="aboutBtn">About</button></a></li>
-                            <li><a href="contact.html"><button id="contactBtn">Contact</button></a></li>
+                            <li><button id="homeBtn">Home</button></li>
+                            <li><button id="gameBtn">Game</button></li>
+                            <li><button id="aboutBtn">About</button></li>
+                            <li><button id="contactBtn">Contact</button></li>
                         </ul>
                     </div>
 
@@ -40,70 +40,82 @@
             </header>
 
             <main>
-                <section id="hero">
-                    <div class="hero-container">
-                        <div class="hero-content">
-                            <p class="hero-badge">🎮 BROWSER REFLEX GAME</p>
-                            <h1>Catch The Button</h1>
-                            <p class="hero-description">A fast-paced reflex game that tests your speed and precision.
-                                Click the button before it escapes — earn points,
-                                break records, and survive the ever-rising difficulty!</p>
+                <section id="homePageSection">
+                    <section id="hero">
+                        <div class="hero-container">
+                            <div class="hero-content">
+                                <p class="hero-badge">🎮 BROWSER REFLEX GAME</p>
+                                <h1>Catch The Button</h1>
+                                <p class="hero-description">A fast-paced reflex game that tests your speed and precision.
+                                    Click the button before it escapes — earn points,
+                                    break records, and survive the ever-rising difficulty!</p>
+                            </div>
+
+                            <div class="hero-buttons">
+                                <button class="primary-btn">&#x25BA PLAY NOW</button>
+                                <button class="secondary-btn">HOW TO PLAY</button>
+                            </div>
+
+                            <div class="hero-stats">
+                                <div class="stat">
+                                    <h3>3</h3>
+                                    <p>Difficulty Levels</p>
+                                </div>
+                                <div class="stat">
+                                    <h3>♾️</h3>
+                                    <p>Replayability</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="features">
+                        <div class="features-container">
+                            <div class="feature-title">
+                                <h1>Why Play Catch The Button?</h1>
+                                <p>Simple concept. Endless challenge.</p>
+                            </div>
+                            <div class="cards">
+                                <article class="card">
+                                    <div class="card-body">
+                                        <div class="card-icon">⚡</div>
+                                        <h3>Lightning Reflexes</h3>
+                                        <p>Test how quickly you react and click the moving button before your time runs out.</p>
+                                    </div>
+                                </article>
+                                <article class="card">
+                                    <div class="card-body">
+                                        <div class="card-icon">🏆</div>
+                                        <h3>Beat Your Record</h3>
+                                        <p>Your High Score is always on display. Challenge yourself to break your personal best every round.</p>
+                                    </div>
+                                </article>
+                                <article class="card">
+                                    <div class="card-body">
+                                        <div class="card-icon">📈</div>
+                                        <h3>Rising Difficulty</h3>
+                                        <p>Every 5 points the button shrinks and moves faster. The game never lets you get comfortable.</p>
+                                    </div>
+                                </article>
+                            </div>
                         </div>
 
-                        <div class="hero-buttons">
-                            <button class="primary-btn">&#x25BA PLAY NOW</button>
-                            <button class="secondary-btn">HOW TO PLAY</button>
-                        </div>
-
-                        <div class="hero-stats">
-                            <div class="stat">
-                                <h3>3</h3>
-                                <p>Difficulty Levels</p>
-                            </div>
-                            <div class="stat">
-                                <h3>♾️</h3>
-                                <p>Replayability</p>
-                            </div>
-                        </div>
-                    </div>
+                        <button>START PLAYING ➡️</button>
+                    </section>
                 </section>
 
-                <section id="features">
-                    <div class="features-container">
-                        <div class="feature-title">
-                            <h1>Why Play Catch The Button?</h1>
-                            <p>Simple concept. Endless challenge.</p>
-                        </div>
-                        <div class="cards">
-                            <article class="card">
-                                <div class="card-body">
-                                    <div class="card-icon">⚡</div>
-                                    <h3>Lightning Reflexes</h3>
-                                    <p>Test how quickly you react and click the moving button before your time runs out.</p>
-                                </div>
-                            </article>
-                            <article class="card">
-                                <div class="card-body">
-                                    <div class="card-icon">🏆</div>
-                                    <h3>Beat Your Record</h3>
-                                    <p>Your High Score is always on display. Challenge yourself to break your personal best every round.</p>
-                                </div>
-                            </article>
-                            <article class="card">
-                                <div class="card-body">
-                                    <div class="card-icon">📈</div>
-                                    <h3>Rising Difficulty</h3>
-                                    <p>Every 5 points the button shrinks and moves faster. The game never lets you get comfortable.</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-
-                    <button>START PLAYING ➡️</button>
+                <section id="gamePageSection" style="display: none">
+                    <h1>This is game page!</h1>
                 </section>
 
+                <section id="aboutPageSection" style="display: none">
+                    <h1>This is about page!</h1>
+                </section>
+
+                <section id="contactPageSection" style="display: none">
+                    <h1>This is contact page!</h1>
+                </section>
             </main>
-
             <footer>
                 <div class="footer-container">
                     <a href="index.html" class="logo">
