@@ -52,7 +52,7 @@ body{
 }
 /*navigation*/
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
 }
 
@@ -80,7 +80,7 @@ nav a{
 }
 .logo-text{
     color: transparent;
-    font-family: "Black Ops One", system-ui;
+    font-family: var(--font-family), serif;
     font-size: 20px;
     margin: 0;
     background: var(--primary-linear-gradient);
@@ -146,11 +146,60 @@ nav a{
 }
 
 #homePageSection {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     background-color: rgb(2, 10, 20, 0.93);
-
+}
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family), serif;
+}
+.hero-content{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.hero-badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    font-size: 12px;
+    color: #14B8A6FF;
+    text-transform: uppercase;
+    background-color: rgba(0, 255, 242, 0.08);
+    border: 1px solid #14B8A6FF;
+    border-radius: var(--btn-border-radius);
+    padding: 0;
+}
+.hero-content h1{
+    color: transparent;
+    background: var(--secondary-linear-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.hero-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkgrey;
+    width: 450px;
+}
+.hero-buttons{
+    display: flex;
+    align-items:center;
+    gap: 5px;
+    font-family: var(--font-family), serif;
+}
+.primary-btn{
 }
 
 
