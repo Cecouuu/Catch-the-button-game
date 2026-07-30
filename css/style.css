@@ -32,7 +32,7 @@
     --third-linear-gradient: linear-gradient(135deg, rgb(69 243 102), rgb(2 239 156), rgb(4 236 65));
     --secondary-button: rgba(255, 255, 255, 0.82);
     --secondary-button-hover: rgba(255, 255, 255);
-    --transition: 0.2s;
+    --transition: 0.25s;
     --main-font-color: #f6f6f6;
     --font-family: "Black Ops One", system-ui;
     --font-size: 16px;
@@ -146,15 +146,19 @@ nav a{
 }
 
 #homePageSection {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(2, 10, 20, 0.93);
-}
-#hero {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-color: rgb(2, 10, 20, 0.93);
+}
+#hero {
+    margin: 120px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 840px;
+    width: 100%;
 }
 .hero-container{
     display: block;
@@ -163,26 +167,30 @@ nav a{
     font-family: var(--font-family), serif;
 }
 .hero-content{
-    display: block;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .hero-badge{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 220px;
+    display: inline-block;
     font-size: 12px;
     color: #14B8A6FF;
     text-transform: uppercase;
     background-color: rgba(0, 255, 242, 0.08);
     border: 1px solid #14B8A6FF;
     border-radius: var(--btn-border-radius);
-    padding: 0;
+    padding: 5px 18px;
+    font-family: Rajdhani, sans-serif;
+    letter-spacing: 2.5px;
 }
 .hero-content h1{
+    text-align: center;
+    font-size: 110px;
     color: transparent;
-    background: var(--secondary-linear-gradient);
+    line-height: 1.05;
+    background: linear-gradient(135deg, rgb(74, 222, 128) 0%, rgb(45, 212, 191) 45%, rgb(96, 165, 250) 90%);
     background-clip: text;
     -webkit-background-clip: text;
 }
@@ -190,16 +198,64 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-family: "Sans Serif Collection", serif;
     color: darkgrey;
     width: 450px;
 }
 .hero-buttons{
     display: flex;
-    align-items:center;
-    gap: 5px;
+    justify-content: center;
+    gap: 15px;
     font-family: var(--font-family), serif;
 }
 .primary-btn{
+    cursor: pointer;
+    background: var(--secondary-linear-gradient);
+    display: flex;
+    justify-content: center;
+    padding: var(--hero-btns-padding);
+    border-radius: var(--btn-border-radius);
+    border: 0 solid;
+    font-size: 16px;
+    transition: var(--transition);
+    transform:scale(1);
 }
+.primary-btn:hover{
+    transform:scale(1.07);
+}
+.secondary-btn{
+    cursor: pointer;
+    background: var(--secondary-button);
+    display: flex;
+    justify-content: center;
+    padding: var(--hero-btns-padding);
+    border-radius: var(--btn-border-radius);
+    border: 0 solid;
+    font-size: 16px;
+    transition: var(--transition);
+    transform:scale(1);
+}
+.secondary-btn:hover{
+    transform:scale(1.07);
+    background: var(--secondary-button-hover);
+}
+.hero-stats{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.stat1, .stat2, .stat3 {
+    font-family: Orbitron, sans-serif;
+    letter-spacing: 1.5px;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+.stat1 p, .stat2 p, .stat3 p{
+    color: rgba(255, 255, 255, 0.33);
+}
+
 
 
