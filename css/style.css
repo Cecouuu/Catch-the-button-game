@@ -33,7 +33,7 @@
     --secondary-button: rgba(255, 255, 255, 0.82);
     --secondary-button-hover: rgba(255, 255, 255);
     --transition: 0.25s;
-    --main-font-color: #f6f6f6;
+    --main-font-color: rgb(246, 246, 246, 0.95);
     --font-family: "Black Ops One", system-ui;
     --font-size: 16px;
     --btn-border-radius: 11px;
@@ -54,6 +54,7 @@ body{
 header{
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav{
@@ -63,7 +64,6 @@ nav{
     background-color: rgb(2, 10, 20, 0.93);
     padding: 0 35px;
     height: 10vh;
-    z-index: 1000;
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
     -webkit-backdrop-filter: blur(18px);
     backdrop-filter: blur(18px)
@@ -144,26 +144,28 @@ nav a{
     /* in order: x offset, y offset, blur size, spread size, color */
     /* blur size and spread size are optional (they default to 0) */
 }
-
+/*Home page section with hero and etc*/
 #homePageSection {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: rgb(2, 10, 20, 0.93);
 }
 #hero {
-    margin: 120px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 840px;
-    width: 100%;
+    padding: 80px 24px 60px;
+    min-height: 100vh;
+    border-bottom: 1px solid rgba(20, 184, 166, 0.22);
 }
 .hero-container{
     display: block;
     align-items: center;
     justify-content: center;
+    max-width: 840px;
+    width: 100%;
     font-family: var(--font-family), serif;
 }
 .hero-content{
@@ -187,6 +189,7 @@ nav a{
 }
 .hero-content h1{
     text-align: center;
+    letter-spacing: 2px;
     font-size: 110px;
     color: transparent;
     line-height: 1.05;
@@ -201,7 +204,9 @@ nav a{
     text-align: center;
     font-family: "Sans Serif Collection", serif;
     color: darkgrey;
-    width: 450px;
+    width: 550px;
+    line-height: 1.3;
+    letter-spacing: 1.5px;
 }
 .hero-buttons{
     display: flex;
@@ -210,14 +215,14 @@ nav a{
     font-family: var(--font-family), serif;
 }
 .primary-btn{
+    color: var(--main-font-color);
     cursor: pointer;
     background: var(--secondary-linear-gradient);
-    display: flex;
-    justify-content: center;
     padding: var(--hero-btns-padding);
     border-radius: var(--btn-border-radius);
     border: 0 solid;
     font-size: 16px;
+    letter-spacing: 1.5px;
     transition: var(--transition);
     transform:scale(1);
 }
@@ -225,13 +230,13 @@ nav a{
     transform:scale(1.07);
 }
 .secondary-btn{
+    color: var(--main-font-color);
     cursor: pointer;
-    background: var(--secondary-button);
-    display: flex;
-    justify-content: center;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(177 171 171 / 0.34);
     padding: var(--hero-btns-padding);
     border-radius: var(--btn-border-radius);
-    border: 0 solid;
     font-size: 16px;
     transition: var(--transition);
     transform:scale(1);
@@ -256,6 +261,78 @@ nav a{
 .stat1 p, .stat2 p, .stat3 p{
     color: rgba(255, 255, 255, 0.33);
 }
+.stat2 h3{
+    background: var(--primary-linear-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
 
 
+/*Feature section*/
+#features{
+    padding: 80px 24px 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.features-container{
+    margin: 25px 0 30px;
+}
+.feature-title{
+    text-align: center;
+    margin: 30px auto;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    background-color: rgba(0, 255, 242, 0.05);
+    border: 1px solid #14B8A6FF;
+    padding: 50px;
+}
 
+/*footer */
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: rgb(2, 10, 20, 0.93);
+    border-bottom: 1px solid rgba(20, 184, 166, 0.22);
+    padding: 14px 25px;
+}
+.footer-container a {
+    text-decoration: none;
+}
+.copyright p{
+    font-family: Orbitron, sans-serif;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.25);
+    margin: 0;
+    font-size: 14px
+}
+.footer-navigation-list {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 14px;
+}
+.footer-navigation ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0
+}
+.footer-navigation-list li {
+    list-style-type: none;
+}
+.footer-navigation-list li a{
+    letter-spacing: 1px;
+    font-family: Rajdhani, sans-serif;
+    color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    font-size: 13px
+}
+.footer-navigation-list li a:hover{
+    color: rgba(255, 255, 255, 0.75);
+}
