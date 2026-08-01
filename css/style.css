@@ -107,7 +107,7 @@ nav a{
 }
 .nav-list li button{
     background: transparent;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 14px;
     transform: scale(1);
     transition: 0.3s;
@@ -185,7 +185,7 @@ nav a{
 }
 .hero-content h1{
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-size: 110px;
     color: transparent;
     line-height: 1.05;
@@ -236,7 +236,7 @@ nav a{
 }
 .secondary-btn:hover{
     transform:scale(1.07);
-    background: var(--secondary-button-hover);
+    background: rgba(255, 255, 255, 0.14);
 }
 .hero-stats{
     display: flex;
@@ -254,25 +254,42 @@ nav a{
 .stat1 p, .stat2 p, .stat3 p{
     color: rgba(255, 255, 255, 0.33);
 }
-.stat2 h3{
+.stat1 h3 span{
+    color:transparent;
     background: var(--primary-linear-gradient);
+    background-clip:text;
     -webkit-background-clip: text;
-    background-clip: text;
+}
+.stat2 h3{
+    color: var(--secondary-green);
 }
 
 
 /*Feature section*/
 #features{
-    padding: 80px 24px 100px;
-    max-width: 1100px;
     margin: 0 auto;
+    border-bottom: 1px solid rgba(20, 184, 166, 0.22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .features-container{
+    padding: 80px 24px 100px;
+    max-width: 1100px;
     margin: 25px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .feature-title{
     text-align: center;
-    margin: 30px auto;
+    margin: 35px auto;
+    color: var(--main-font-color);
+    font-family: Rajdhani, sans-serif;
+}
+.feature-title p{
+    color: rgba(255, 255, 255, 0.33);;
 }
 .cards{
     display: flex;
@@ -282,8 +299,10 @@ nav a{
 }
 .card{
     padding: 36px 30px;
-    width: 300px;
-    height: 350px;
+    max-width: 650px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 255, 242, 0.05);
     border: 1px solid rgb(20, 184, 166, 0.4);
     border-radius: 18px;
@@ -292,7 +311,46 @@ nav a{
 }
 .card:hover{
     transform:scale(1.05);
-    box-shadow: 0 0 25px 10px rgb(20, 184, 166, 0.6) ;
+    box-shadow: 0 0 35px 5px rgb(20, 184, 166, 0.6) ;
+}
+.card-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-body h3{
+    font-size: 24px;
+}
+.card-body p{
+    font-size: 13px
+}
+.card-icon{
+    width: 45px;
+    height: 45px;
+    background-color: rgb(0 255 241 / 0.1);
+    border: 1px solid rgb(0 255 241 / 0.2);
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px 0;
+}
+.features-container button{
+    margin-top: 35px;
+    color: var(--main-font-color);
+    cursor: pointer;
+    background: var(--secondary-linear-gradient);
+    padding: var(--hero-btns-padding);
+    border-radius: var(--btn-border-radius);
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    transition: var(--transition);
+    transform:scale(1)
+}
+.features-container button:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 20px 8px rgb(0 255 241 / 0.2);
 }
 
 /*footer */
