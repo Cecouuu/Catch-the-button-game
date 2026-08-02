@@ -37,7 +37,6 @@ function btnSelection(buttonOnNavBar,sectionPage,){
         navBarButtons[i].btn.style.backgroundColor = "transparent";
         navBarButtons[i].section.style.display = "none";
         navBarButtons[i].btn.style.border = "0 solid transparent"
-
     }
     sectionPage.style.display = "flex";
     buttonOnNavBar.style.transform = "scale(1.1)"
