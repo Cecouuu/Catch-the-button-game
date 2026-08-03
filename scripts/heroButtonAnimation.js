@@ -1,31 +1,28 @@
 const playBtn = document.querySelector("#playBtn");
 let blur = 0;
 let spread = 0;
+let growing = true;
 
 running = setInterval(function (){
-    increaseShadow();
-    decreaseShadow();
-}, 1000)
+    playBtn.style.boxShadow = `0 0 ${blur}px ${spread}px var(--accent-green)`;
+    if (growing){
+        increaseShadow();
+    }
+    else{
+        decreaseShadow();
+    }
+}, 80)
 function increaseShadow (){
-    timer = setInterval(function (){
-        if (blur >= 0 && blur < 20){
-            playBtn.style.boxShadow = `0 0 ${blur}px ${spread}px var(--accent-green)`;
-            blur++;
-            spread++;
-            console.log(blur);
-        }
-        clearInterval(timer);
-    },100)
+    blur+=3;
+    spread+=0.75;
+    if (spread >= 8) {
+        growing = false;
+    }
 }
-
 function decreaseShadow (){
-    timer = setInterval(function (){
-        if (blur <= 20 &&  blur > 0){
-            playBtn.style.boxShadow = `0 0 ${blur}px ${spread}px var(--accent-green)`;
-            blur--;
-            spread--;
-            console.log(blur);
-        }
-        clearInterval(timer);
-    },100)
+    blur-=3;
+    spread-=0.75;
+    if (spread <= 0){
+        growing = true;
+    }
 }
