@@ -105,7 +105,7 @@ nav a{
     text-decoration: none;
     list-style-type: none;
 }
-.nav-list li button{
+.nav-list-button{
     background: transparent;
     padding: 10px 25px;
     border-radius: 14px;
@@ -114,14 +114,12 @@ nav a{
     border:none transparent;
     color: var(--main-font-color);
 }
-.nav-list li button:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
 .nav-list li button:hover{
+    background: rgba(255, 255, 255, 0.1);
     transition: 0.14s;
     transform: scale(1.07);
 }
-#homeBtn{
+.active{
     transform: scale(1.1);
     background-color: rgba(0, 255, 242, 0.08);
     border: 1px solid #14B8A6FF;
@@ -159,7 +157,6 @@ nav a{
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
 }
 .hero-container{
-    display: block;
     max-width: 840px;
     width: 100%;
     font-family: var(--font-family), serif;

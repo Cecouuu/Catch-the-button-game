@@ -34,12 +34,10 @@ navBarButtons.forEach(function (button){
 
 function btnSelection(buttonOnNavBar,sectionPage,){
     for(let i = 0; i < navBarButtons.length; i++){
-        navBarButtons[i].btn.style.backgroundColor = "transparent";
+        navBarButtons[i].btn.classList.add(".nav-list-button")
+        navBarButtons[i].btn.classList.remove("active");
         navBarButtons[i].section.style.display = "none";
-        navBarButtons[i].btn.style.border = "0 solid transparent"
     }
     sectionPage.style.display = "flex";
-    buttonOnNavBar.style.transform = "scale(1.1)"
-    buttonOnNavBar.style.backgroundColor = `rgba(0, 255, 242, 0.08)`;
-    buttonOnNavBar.style.border = "1px solid #14B8A6FF";
+    buttonOnNavBar.classList.add("active");
 }
