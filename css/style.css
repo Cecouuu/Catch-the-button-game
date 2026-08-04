@@ -114,15 +114,18 @@ nav a{
     border:none transparent;
     color: var(--main-font-color);
 }
-.nav-list li button:hover{
+.nav-list-button:hover{
     background: rgba(255, 255, 255, 0.1);
     transition: 0.14s;
-    transform: scale(1.07);
+    transform: scale(1.1);
 }
 .active{
     transform: scale(1.1);
     background-color: rgba(0, 255, 242, 0.08);
     border: 1px solid #14B8A6FF;
+}
+.active:hover{
+    background-color: rgba(0, 255, 242, 0.08);
 }
 .nav-button button{
     width: 100px;

@@ -27,14 +27,17 @@ const navBarButtons = [
 ]
 
 navBarButtons.forEach(function (button){
-    button.btn.addEventListener(`click`,function (){
+    button.btn.addEventListener(`click`,() => {
         btnSelection(button.btn, button.section);
     });
 })
 
 function btnSelection(buttonOnNavBar,sectionPage,){
     for(let i = 0; i < navBarButtons.length; i++){
-        navBarButtons[i].btn.classList.add(".nav-list-button")
+        // classList.add is adding a specific class from CSS to the HTML element.
+        // when is used classList it is selecting the classes that has or not the chosen element.
+        // if there is no element it will work  as well, and with add you can add classes to the element or remote it or toggle that adds and removes when is clicked!
+        navBarButtons[i].btn.classList.add("nav-list-button")
         navBarButtons[i].btn.classList.remove("active");
         navBarButtons[i].section.style.display = "none";
     }
