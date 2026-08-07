@@ -81,7 +81,7 @@ While building this project I practiced:
 - Mobile improvements
 - Better sound management
 - Statistics page
-- Leaderboard
+- Leaderboards
 
 ---
 
