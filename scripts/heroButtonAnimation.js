@@ -7,11 +7,9 @@ let growing = false;
 running = setInterval(() => {
     playBtn.style.boxShadow = `0 0 ${blur}px ${spread}px rgb(0 255 241 / 0.25)`;
         if (growing){
-            console.log(`It is increasing!`);
             increaseShadow();
         }
         else{
-            console.log(`It is decreasing!`);
             decreaseShadow();
         }
 }, 105);

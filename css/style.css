@@ -54,12 +54,12 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: rgb(2, 10, 20, 1);
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(2, 10, 20, 0.93);
     padding: 0 35px;
     height: 10vh;
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
@@ -145,24 +145,54 @@ nav a{
 }
 /*Home page section with hero and etc*/
 #homePageSection {
-    display: block;
+    position:static;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(2, 10, 20, 0.93);
+    background-color: rgb(2, 10, 20);
 }
 #hero {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 80px 24px 60px;
+    width: 100vw;
     min-height: 100vh;
+    position: static;
+    background-color: rgb(2 10 20 / 0.1);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
+    z-index: 2;
 }
 .hero-container{
     max-width: 840px;
     width: 100%;
     font-family: var(--font-family), serif;
+}
+.hero-background{
+    max-width: 840px;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 200px;
+}
+.blocks {
+    background: transparent;
+    border-radius: 100px;
+    box-shadow: 0 0 500px 150px rgb(0 255 241 / 0.1);
+}
+.move-up{
+
+}
+.move-down{
+
+}
+.move-left{
+
+}
+.move-right{
+
 }
 .hero-content{
     gap: 30px;
@@ -272,6 +302,7 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: static;
 }
 .features-container{
     padding: 80px 24px 100px;
@@ -321,7 +352,7 @@ nav a{
 }
 .card:hover{
     transform:scale(1.05);
-    translate: 0 -10px;
+    translate: 0 -14px;
 }
 .card--green:hover{
     box-shadow: 0 0 35px 5px rgb(3 236 98 / 0.6);
