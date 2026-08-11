@@ -70,7 +70,7 @@ While building this project I practiced:
 - Game Logic
 - Dynamic UI Updates
 - Clean Code
-- Code Organization
+- Code Organizationс
 
 ---
 
