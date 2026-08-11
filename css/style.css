@@ -145,7 +145,7 @@ nav a{
 }
 /*Home page section with hero and etc*/
 #homePageSection {
-    position:static;
+    position:relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,25 +159,26 @@ nav a{
     padding: 80px 24px 60px;
     width: 100vw;
     min-height: 100vh;
-    position: static;
+    position: relative;
     background-color: rgb(2 10 20 / 0.1);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
-    z-index: 2;
 }
 .hero-container{
     max-width: 840px;
     width: 100%;
     font-family: var(--font-family), serif;
+    z-index: 2;
 }
 .hero-background{
     max-width: 840px;
     width: 100%;
     position: absolute;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 200px;
+    z-index: 0;
+    inset: 50px;
 }
 .blocks {
+    width: 0;
+    height: 0;
     background: transparent;
     border-radius: 100px;
     box-shadow: 0 0 500px 150px rgb(0 255 241 / 0.1);
