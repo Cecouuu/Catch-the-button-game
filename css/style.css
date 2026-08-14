@@ -198,8 +198,8 @@ nav a{
 }
 /*Blocks positions*/
 .top-right{
-    bottom: 100%;
-    left: 100%;
+    bottom: 98%;
+    left: 98%;
 }
 .top-left{
     bottom:100%;
@@ -229,6 +229,16 @@ nav a{
     bottom: 50%;
     left: 100%;
 }
+.move-right{
+    animation-name: moveRight;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+/*@keyframes moveRight {*/
+/*    0%{transform: translateX(0px) translateY(0px);}*/
+/*    50%{transform: translateX(540px) translateY(270px);}*/
+/*    100%{transform: translateX(0px) translateY(0px);}*/
+/*}*/
 .hero-content{
     gap: 30px;
     display: flex;
