@@ -152,7 +152,7 @@
                                 </div>
                                 <div class="cardGame card justify-content-center align-items-center d-flex">
 
-                                    <div class="card-body" id="StartingDisplay">
+                                    <div class="startingDisplay card-body" id="StartingDisplay" style="height: 100px !important;">
                                         <div class="form-group justify-content-center align-items-center mt-2" id="CurrentGameModeBox" style="display: block;">
                                             <p class="justify-content-center align-items-center d-flex my-1">Choose your Game Mode!</p>
 
@@ -175,7 +175,7 @@
 
 
                                     <div class="gameDisplay form-group" id="displayGame">
-                                        <div class="form-group">
+                                        <div class="form-group align-items-center justify-content-center flex-column d-flex">
 
                                             <button class="backButton btn mb-2" id="btnBack" style="display: none"><b>Back</b></button>
 
@@ -190,18 +190,21 @@
                                                     <p id="displayPoints">Points: <b><span id="colorPoints" style="color: red">0</span></b> </p>
                                                 </div>
                                                 <div class="box finalPointsBox">
-                                                    <p id="finalPoints" style="display: none;">Finals points: <b><span class="m-1" id="finalPointsColor"></span></b> </p>
+                                                    <p id="finalPoints" style="display: none;">Finals points: <b><span id="finalPointsColor"></span></b> </p>
                                                 </div>
                                             </div>
 
                                             <h1 id="gameOver"></h1>
                                         </div>
+
                                         <div id="gameArea" class="gameArea form-group border">
-                                            <button class="btn btn-secondary" id="btnCatchMe" style="position: absolute;">🎯</button>
+                                            <button class="btn" id="btnCatchMe" style="position: absolute;">🎯</button>
                                         </div>
+
                                         <div class="form-group my-3" style="display: flex; align-items: center; justify-content: center;">
                                             <button class="btn btn-secondary" id="btnPlayAgain" style="display: none">Play again!</button>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>

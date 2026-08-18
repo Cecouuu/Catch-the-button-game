@@ -373,7 +373,8 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
         function startGame() {
 
             if (currentGameMode !== undefined){
-                displayGame.style.display = "block";
+                displayGame.style.display = "flex";
+                displayGame.style.flexDirection = "column"
                 btnStartGame.style.display = "none";
                 WelcomeMessage.style.display = "none";
                 CurrentGameModeBox.style.display = "none";
