@@ -46,6 +46,16 @@
     border-radius: 14px;
     border: 1px solid #14B8A6FF;
 }
+#WelcomeMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#WelcomeMessage p{
+    text-align: center;
+    width: 450px;
+}
 .difficultyBox{
     margin: 14px;
     padding: 24px;
