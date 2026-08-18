@@ -217,8 +217,9 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
         function gameModeBtnSelector (selectedBtn, mode){
             for (let i = 0; i < gameModeButtons.length; i++){
                 gameModeButtons[i].button.style.backgroundColor = "#6c757d";
+                gameModeButtons[i].button.style.boxShadow = `0 0 0 0 rgb(0 0 0 / 1)`;
             }
-            selectedBtn.style.backgroundColor = "#064b77";
+            selectedBtn.style.boxShadow = `0 0 40px 20px rgb(0 255 241 / 0.25)`;
             currentGameMode = mode;
             DisplayCurrentGameMode.textContent = `${mode.name}`;
             loadHighScore();
