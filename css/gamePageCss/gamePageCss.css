@@ -28,7 +28,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
     padding: 30px 24px;
     width: 100vw;
     min-height: 100vh;
@@ -86,7 +85,6 @@
     background:linear-gradient(135deg, rgba(34, 197, 94, 0.65), rgba(20, 184, 166, 0.65), rgba(30, 236, 197, 0.65));
 }
 .difficultyButton:hover{
-    box-shadow: 0 0 25px 10px rgb(0 255 241 / 0.35);
     background:linear-gradient(135deg, rgba(34, 197, 94, 0.55), rgba(20, 184, 166, 0.55), rgba(30, 236, 197, 0.55));
     color: var(--main-font-color);
 }
@@ -172,8 +170,20 @@
     background: var(--third-linear-gradient);
 }
 .backButton{
-
+    color: var(--main-font-color);
+    width: 104px;
+    height: 50px;
+    border: 2.4px solid rgb(7 251 214 / 0.73);
+    border-radius: 14px;
+    background: rgb(128 186 19 / 0.7);
+    text-align: center;
 }
 #btnPlayAgain{
-
+    color: var(--main-font-color);
+    width: 124px;
+    height: 65px;
+    border: 2.4px solid rgb(7 251 214 / 0.73);
+    border-radius: 14px;
+    background: rgb(35 131 14 / 0.7);
+    text-align: center;
 }
