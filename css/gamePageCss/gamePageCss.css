@@ -30,8 +30,8 @@
     flex-direction: column;
     margin-top: 50px;
     padding: 30px 24px;
-    width: 1025px;
-    min-height: 500px;
+    width: 100vw;
+    min-height: 100vh;
     z-index: 1;
     position: static;
     background-color: rgb(2 10 20 / 0.4);
@@ -72,14 +72,22 @@
     flex-direction: column;
 }
 .difficultyButton{
+    cursor: pointer;
     color: var(--main-font-color);
     min-width: 104px;
     min-height: 50px;
     border-radius: 14px;
-    border: 2px solid #14B8A6FF;
-    background: var(--secondary-linear-gradient);
+    transition: 0.14s;
+    border: 2.5px solid rgb(11 251 150);
+    background:linear-gradient(135deg, rgba(34, 197, 94, 0.8), rgba(20, 184, 166, 0.8), rgba(30, 236, 197, 0.8));
+}
+.activeDifficultyButton{
+    box-shadow: 0 0 25px 10px rgb(0 255 241 / 0.35);
+    background:linear-gradient(135deg, rgba(34, 197, 94, 0.65), rgba(20, 184, 166, 0.65), rgba(30, 236, 197, 0.65));
 }
 .difficultyButton:hover{
+    box-shadow: 0 0 25px 10px rgb(0 255 241 / 0.35);
+    background:linear-gradient(135deg, rgba(34, 197, 94, 0.55), rgba(20, 184, 166, 0.55), rgba(30, 236, 197, 0.55));
     color: var(--main-font-color);
 }
 .stats {
@@ -152,7 +160,6 @@
     justify-content: center;
     color: #f30d0d;
 }
-
 #btnCatchMe {
     display: flex;
     justify-content: center;
@@ -161,5 +168,12 @@
     height: 85px;
     border-radius: 14px;
     transition: 0.14s;
+    border: 0 solid;
     background: var(--third-linear-gradient);
+}
+.backButton{
+
+}
+#btnPlayAgain{
+
 }

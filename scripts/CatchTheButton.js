@@ -219,10 +219,10 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
 
         function gameModeBtnSelector (selectedBtn, mode, color){
             for (let i = 0; i < gameModeButtons.length; i++){
-                gameModeButtons[i].button.style.backgroundColor = "#6c757d";
-                gameModeButtons[i].button.style.boxShadow = `0 0 0 0 rgb(0 0 0 / 1)`;
+                // gameModeButtons[i].button.style.backgroundColor = "#6c757d";
+                gameModeButtons[i].button.classList.remove("activeDifficultyButton");
             }
-            selectedBtn.style.boxShadow = `0 0 25px 10px rgb(0 255 241 / 0.35)`;
+            selectedBtn.classList.add("activeDifficultyButton");
             currentGameMode = mode;
             DisplayCurrentGameMode.style.color = `${color}`
             DisplayCurrentGameMode.textContent = `${mode.name}`;
