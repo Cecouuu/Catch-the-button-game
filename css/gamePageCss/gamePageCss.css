@@ -16,7 +16,7 @@
 #gamePageSection {
     position:relative;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     background-color: rgba(2, 10, 20, 1);
     width: 100vw;
@@ -26,14 +26,15 @@
     letter-spacing: 1px;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
+    margin-top: 50px;
     padding: 30px 24px;
-    width: 100vw;
-    min-height: 100vh;
+    width: 1025px;
+    min-height: 500px;
     z-index: 1;
     position: static;
-    background-color: rgb(2 10 20 / 0.1);
+    background-color: rgb(2 10 20 / 0.4);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
 }
 .gameStartingMenu{
@@ -42,9 +43,10 @@
     align-items: center;
     justify-content: center;
     min-width: 600px;
-    min-height: 90px;
+    min-height: 650px;
     border-radius: 14px;
     border: 1px solid #14B8A6FF;
+    box-shadow: 0 0 50px 15px rgba(20, 184, 166, 0.22);
 }
 #WelcomeMessage{
     display: flex;
@@ -56,22 +58,29 @@
     text-align: center;
     width: 450px;
 }
-.startingDisplay{
-    height: 200px !important;
-}
 .difficultyBox{
     margin: 14px;
     padding: 24px;
     gap: 14px;
 }
 .gameDisplay{
+    min-width: 100%;
+    min-height: 200px;
     display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .difficultyButton{
+    color: var(--main-font-color);
     min-width: 104px;
     min-height: 50px;
     border-radius: 14px;
-    background: var(--primary-linear-gradient);
+    border: 2px solid #14B8A6FF;
+    background: var(--secondary-linear-gradient);
+}
+.difficultyButton:hover{
+    color: var(--main-font-color);
 }
 .stats {
     display: flex;
@@ -100,12 +109,35 @@
 .box p span{
     margin-left: 5px;
 }
+.finalPointsBox {
+    text-align: center;
+}
+
 .cardGame{
     min-width: 950px;
-    min-height: 650px;
+    min-height: 250px;
     background-color: transparent;
     border: 0;
 }
+#btnStartGame{
+    margin-top: 10px;
+    min-height: 45px;
+    min-width: 100px;
+    background: var(--secondary-linear-gradient);
+    border: 1px solid var(--secondary-linear-gradient);
+    border-radius: 14px;
+    animation: glowingAnimationStartBtn 3s ease-in-out infinite;
+    transition: 0.14s;
+}
+#btnStartGame:hover{
+    transform: scale(1.05);
+}
+@keyframes glowingAnimationStartBtn{
+    0% {box-shadow: 0 0 0 0 rgb(20 184 66 / 0.44);}
+    50% {box-shadow: 0 0 25px 5px rgb(20 184 66 / 0.64);}
+    100% {box-shadow: 0 0 0 0 rgb(20 184 66 / 0.44);}
+}
+
 .gameArea{
     border-radius: 12px;
     border: 2px solid #14B8A6FF;
@@ -123,7 +155,8 @@
 
 #btnCatchMe {
     display: flex;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 85px;
     height: 85px;
     border-radius: 14px;

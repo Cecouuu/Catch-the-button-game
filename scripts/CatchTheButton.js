@@ -196,31 +196,35 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
     const gameModeButtons = [
         {
             button: btnEasyGameMode,
-            mode: gameMode[0]
+            mode: gameMode[0],
+            color: `green`
         },
         {
             button: btnMediumGameMode,
-            mode: gameMode[1]
+            mode: gameMode[1],
+            color: `orange`
         },
         {
             button: btnHardGameMode,
-            mode: gameMode[2]
+            mode: gameMode[2],
+            color: `red`
         }
     ]
 
         gameModeButtons.forEach(function (item){
             item.button.addEventListener("click",function(){
-                gameModeBtnSelector(item.button, item.mode)
+                gameModeBtnSelector(item.button, item.mode, item.color)
             })
         })
 
-        function gameModeBtnSelector (selectedBtn, mode){
+        function gameModeBtnSelector (selectedBtn, mode, color){
             for (let i = 0; i < gameModeButtons.length; i++){
                 gameModeButtons[i].button.style.backgroundColor = "#6c757d";
                 gameModeButtons[i].button.style.boxShadow = `0 0 0 0 rgb(0 0 0 / 1)`;
             }
-            selectedBtn.style.boxShadow = `0 0 40px 20px rgb(0 255 241 / 0.25)`;
+            selectedBtn.style.boxShadow = `0 0 25px 10px rgb(0 255 241 / 0.35)`;
             currentGameMode = mode;
+            DisplayCurrentGameMode.style.color = `${color}`
             DisplayCurrentGameMode.textContent = `${mode.name}`;
             loadHighScore();
         }
