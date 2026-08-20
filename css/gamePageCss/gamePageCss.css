@@ -115,8 +115,13 @@
 .box p span{
     margin-left: 5px;
 }
-.finalPointsBox {
+#finalPoints{
     text-align: center;
+    margin: 10px;
+    width: fit-content;
+}
+#finalPoints #finalPointsColor{
+    width: fit-content;
 }
 
 .cardGame{
@@ -145,6 +150,9 @@
 }
 
 .gameArea{
+    background-image: url("tools/images/game_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 12px;
     border: 2px solid #14B8A6FF;
     margin-top: 10px;
@@ -159,6 +167,7 @@
     color: #f30d0d;
 }
 #btnCatchMe {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,15 +184,21 @@
     height: 50px;
     border: 2.4px solid rgb(7 251 214 / 0.73);
     border-radius: 14px;
-    background: rgb(128 186 19 / 0.7);
+    background: linear-gradient(135deg, rgb(23 241 117 / 0.9), rgb(11 200 241 / 0.9));
     text-align: center;
+}
+.backButton:hover{
+    background: linear-gradient(135deg, rgb(23 241 117 / 0.7), rgb(11 200 241 / 0.7));
 }
 #btnPlayAgain{
     color: var(--main-font-color);
-    width: 124px;
-    height: 65px;
+    width: 134px;
+    height: 55px;
     border: 2.4px solid rgb(7 251 214 / 0.73);
     border-radius: 14px;
-    background: rgb(35 131 14 / 0.7);
+    background: linear-gradient(135deg, rgb(23 241 117 / 0.9), rgb(11 200 241 / 0.9));
     text-align: center;
+}
+#btnPlayAgain:hover{
+    background: linear-gradient(135deg, rgb(23 241 117 / 0.7), rgb(11 200 241 / 0.7));
 }

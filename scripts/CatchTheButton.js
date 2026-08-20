@@ -151,7 +151,7 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
         {
             name: `Hard mode`,
             storageKey: "hardHighScore",
-            time: 20,
+            time: 2,
             highScore: 0,
             difficulties: [
                 {
