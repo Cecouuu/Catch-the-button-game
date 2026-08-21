@@ -93,7 +93,7 @@
     justify-content: center;
     align-content: center;
     height: 100px;
-    min-width: 600px;
+    min-width: 700px;
     gap: 10px;
 }
 .box{
@@ -101,7 +101,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 90px;
+    height: 85px;
     border-radius: 14px;
     border: 1px solid #14B8A6FF;
     background: rgba(255, 255, 255, 0.05);
@@ -117,7 +117,6 @@
 }
 #finalPoints{
     text-align: center;
-    margin: 10px;
     width: fit-content;
 }
 #finalPoints #finalPointsColor{
@@ -149,10 +148,8 @@
     100% {box-shadow: 0 0 0 0 rgb(20 184 66 / 0.44);}
 }
 
-.gameArea{
-    background-image: url("tools/images/game_background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+#gameArea{
+    background-image: url('tools/images/game_background.jpg');
     border-radius: 12px;
     border: 2px solid #14B8A6FF;
     margin-top: 10px;
@@ -177,6 +174,7 @@
     transition: 0.14s;
     border: 0 solid;
     background: var(--third-linear-gradient);
+    box-shadow: 0 0 30px 5px rgb(7 251 214 / 0.77);
 }
 .backButton{
     color: var(--main-font-color);
@@ -185,7 +183,8 @@
     border: 2.4px solid rgb(7 251 214 / 0.73);
     border-radius: 14px;
     background: linear-gradient(135deg, rgb(23 241 117 / 0.9), rgb(11 200 241 / 0.9));
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .backButton:hover{
     background: linear-gradient(135deg, rgb(23 241 117 / 0.7), rgb(11 200 241 / 0.7));
@@ -197,7 +196,8 @@
     border: 2.4px solid rgb(7 251 214 / 0.73);
     border-radius: 14px;
     background: linear-gradient(135deg, rgb(23 241 117 / 0.9), rgb(11 200 241 / 0.9));
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 #btnPlayAgain:hover{
     background: linear-gradient(135deg, rgb(23 241 117 / 0.7), rgb(11 200 241 / 0.7));

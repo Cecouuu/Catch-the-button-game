@@ -401,8 +401,8 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
             finalPointsColor.style.display = "flex";
             finalPointsColor.textContent = `${points}`;
 
-            btnPlayAgain.style.display = "block";
-            btnBack.style.display = "block"
+            btnPlayAgain.style.display = "flex";
+            btnBack.style.display = "flex"
         }
 
         function updateLevel(){
@@ -417,9 +417,9 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
             clearInterval(timer);
             resetGame();
             displayGame.style.display = "none";
-            btnStartGame.style.display = "block";
-            WelcomeMessage.style.display = "block";
-            CurrentGameModeBox.style.display = "block";
+            btnStartGame.style.display = "flex";
+            WelcomeMessage.style.display = "flex";
+            CurrentGameModeBox.style.display = "flex";
             EmptyGameModeAlert.style.display = "none";
             btnBack.style.display = "none";
         }
