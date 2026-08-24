@@ -15,7 +15,7 @@
 
 #gamePageSection {
     position:relative;
-    display: flex;
+    display: none;
     align-items: start;
     justify-content: center;
     background-color: rgba(2, 10, 20, 1);

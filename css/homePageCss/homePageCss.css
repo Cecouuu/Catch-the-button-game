@@ -17,7 +17,7 @@
 /*Home page section with hero and etc*/
 #homePageSection {
     position:relative;
-    display: none; /*Flex put it back when game page is done!*/
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;

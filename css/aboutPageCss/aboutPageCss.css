@@ -1,0 +1,44 @@
+/*--------------------------------------------------*/
+/*Catch Me Game*/
+/*Created by Cvetoslav Krumov*/
+/*2026*/
+
+/*Portfolio Project*/
+
+/*Copyright (c) 2026 Cvetoslav Krumov*/
+/*All Rights Reserved.*/
+
+/*This project is published for educational and portfolio purposes only.*/
+
+/*Unauthorized copying, redistribution or claiming this project as your own is prohibited.*/
+/*--------------------------------------------------*/
+
+#aboutPageSection {
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(2, 10, 20, 1);
+}
+.about-hero{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-hero-content{
+    text-align: Center;
+}
+.about-hero-content h1{
+    background: var(--secondary-linear-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.about-hero-content p span{
+    color: var(--main-font-color);
+    font-family: "Arial Rounded MT Bold", "sans-serif";
+}
