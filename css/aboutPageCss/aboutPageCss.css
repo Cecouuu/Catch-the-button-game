@@ -16,29 +16,68 @@
 #aboutPageSection {
     position:relative;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    flex-direction: column;
     background-color: rgba(2, 10, 20, 1);
-}
-.about-hero{
     width: 100vw;
     height: 100vh;
-    position: relative;
+}
+.about-hero{
+    letter-spacing: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 30px 24px;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 1;
+    position: static;
+    background-color: rgb(2 10 20 / 0.4);
+    border-bottom: 1px solid rgba(20, 184, 166, 0.22);
 }
 .about-hero-content{
     text-align: Center;
+    letter-spacing: 2   px;
 }
 .about-hero-content h1{
-    background: var(--secondary-linear-gradient);
+    color: transparent;
+    background: linear-gradient(160deg, rgb(24 228 135 / 0.85), rgb(6 54 244 / 0.85));
     background-clip: text;
     -webkit-background-clip: text;
 }
+.about-hero-content p {
+    margin: 25px 0;
+    font-family: sans-serif;
+    color: dimgray;
+    text-align: center;
+    width: 750px;
+}
 .about-hero-content p span{
     color: var(--main-font-color);
-    font-family: "Arial Rounded MT Bold", "sans-serif";
+    font-family: var(--font-family), "sans-serif";
+}
+.about-how-to-play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-article{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 95px;
+    min-width: 450px;
+}
+.about-article-logo{
+    width: 90px;
+    height: 100%;
+}
+/*LOOK HOW TO MAKE TEXT BOLD AND FIX P TAG COLOR TO BE GRAY!*/
+.about-article-text h1{
+    font-size: 26px;
+}
+.about-article-text p{
+    font-size: 14px;
 }
