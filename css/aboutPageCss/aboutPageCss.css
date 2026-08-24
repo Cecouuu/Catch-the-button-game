@@ -20,7 +20,7 @@
     justify-content: center;
     background-color: rgba(2, 10, 20, 1);
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 .about-hero{
     letter-spacing: 1px;
@@ -63,21 +63,58 @@
     justify-content: center;
     flex-direction: column;
 }
+.about-articles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 1240px;
+}
 .about-article{
+    margin: 10px 0;
+    padding: 24px;
     display: flex;
     justify-content: center;
     align-items:center;
-    min-height: 95px;
-    min-width: 450px;
+    height: 134px;
+    width: 1050px;
+    border: 1px solid;
+    border-radius: 24px;
 }
 .about-article-logo{
-    width: 90px;
+    font-family: Orbitron, sans-serif;
+    width: 125px;
     height: 100%;
 }
-/*LOOK HOW TO MAKE TEXT BOLD AND FIX P TAG COLOR TO BE GRAY!*/
+.about-article-logo p{
+    text-align: center;
+    font-size: 32px;
+    width: 125px;
+    height: 100%;
+    margin: 0;
+}
+.about-article-text {
+    font-family: Orbitron, sans-serif;
+    width:80%;
+    height: 100%;
+}
 .about-article-text h1{
+    font-style: italic;
     font-size: 26px;
+    margin: 0;
 }
 .about-article-text p{
     font-size: 14px;
+    font-weight: 1000;
+    margin: 10px 0 0 0;
+    color: rgb(105 105 105 / 0.85);
+}
+.article-box1 {
+    border-color: #00FA9A;
+}
+.article-box1 .about-article-logo p {
+    color: #00FA9A;
+}
+.article-box1 .about-article-text h1 {
+    color: #00FA9A;
 }
