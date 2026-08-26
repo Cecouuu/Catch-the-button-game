@@ -42,9 +42,9 @@
 }
 .about-hero-content h1{
     font-family: PlayFair, sans-serif;
-    font-size: 48px;
+    font-size: 4.25rem;
     color: transparent;
-    background: linear-gradient(160deg, rgb(24 228 135 / 0.85), rgb(6 54 244 / 0.85));
+    background: linear-gradient(160deg, rgb(8 244 161 / 0.85), rgb(20 237 13 / 0.85));
     background-clip: text;
     -webkit-background-clip: text;
 }
@@ -94,28 +94,42 @@
     transform: translateX(24px) scale(1.024);
 }
 .about-article-logo{
-    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
     height: 100%;
 }
 .about-article-logo p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: Orbitron, sans-serif;
     text-align: center;
     font-size: 32px;
-    width: 125px;
     height: 100%;
+    width:100%;
     margin: 0;
 }
 .about-article-text {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
     font-family: Orbitron, sans-serif;
     width:80%;
     height: 100%;
 }
 .about-article-text h1{
+    width:100%;
+    height: 100%;
     font-style: italic;
     font-size: 20px;
     margin: 0;
 }
 .about-article-text p{
+    width:100%;
+    height: 100%;
     font-size: 14px;
     font-weight: 1000;
     margin: 10px 0 0 0;
@@ -173,7 +187,7 @@
     color: rgb(163 15 15);
 }
 .about-difficulty-Levels{
-    margin: 75px 0 0 0;
+    margin: 75px 0 45px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,5 +195,69 @@
     color: var(--main-font-color);
 }
 .about-difficulty-Levels h1{
+    margin: 25px;
     font-size: 36px;
+}
+.levels-boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 10vh;
+    margin: 50px;
+}
+.levels-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+    width: 175px;
+    height: 150px;
+    border: 2px solid;
+    border-radius: 14px;
+    font-family: sans-serif;
+    transition: 0.14s;
+    transform: scale(1);
+}
+.levels-box:hover{
+    transform: scale(1.075);
+}
+.levels-box h1{
+    font-size: 22px;
+    margin: 5px;
+}
+.levels-box h2{
+    font-size: 18px;
+    color: dimgray;
+    margin: 5px;
+}
+.levels-box p {
+    margin: 5px;
+    color: dimgray;
+}
+.levels-easy{
+    color: rgb(0 128 0 / 0.75);
+    background: rgb(0 128 0 / 0.14);
+    border-color: rgb(0 128 0 / 1);
+}
+.levels-easy:hover{
+    box-shadow: 0 0 35px 5px green;
+}
+.levels-medium{
+    background: rgb(255 165 0 / 0.14);
+    border-color: rgb(255 165 0 / 0.75);
+    color: rgb(255 165 0 / 1);
+}
+.levels-medium:hover{
+    box-shadow: 0 0 35px 5px orange;
+}
+.levels-hard{
+    background: rgb(255 0 0 / 0.14);
+    border-color: rgb(255 0 0 / 0.75);
+    color: rgb(255 0 0 / 1);
+ }
+.levels-hard:hover{
+    box-shadow: 0 0 35px 5px red;
 }
