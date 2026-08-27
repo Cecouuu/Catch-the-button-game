@@ -15,7 +15,7 @@
 
 #aboutPageSection {
     position:relative;
-    display: flex;
+    display: none;
     align-items: start;
     justify-content: center;
     background-color: rgba(2, 10, 20, 1);
@@ -29,6 +29,7 @@
     align-items: center;
     flex-direction: column;
     padding: 30px 24px;
+    margin: 20px 0 0 0 ;
     width: 100vw;
     min-height: 100vh;
     z-index: 1;
@@ -64,7 +65,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 25px 0 0 0;
+    margin: 50px 0 0 0;
 }
 .about-how-to-play h1{
     font-size: 32px;
@@ -236,6 +237,7 @@
 .levels-box p {
     margin: 5px;
     color: dimgray;
+    font-family: Orbitron, sans-serif;
 }
 .levels-easy{
     color: rgb(0 128 0 / 1);
@@ -286,6 +288,9 @@
     padding: 25px;
     height: 100%;
     width: 100%;
+}
+.game-tips .logo p span{
+    font-family: "Arial Rounded MT Bold";
 }
 .game-tips .content{
     color: dimgray;
