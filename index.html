@@ -50,7 +50,7 @@
             </header>
 
             <main>
-                <section id="homePageSection">
+                <section id="homePageSection" style="display: none;">
 
                     <div class="hero-background">
                         <div class="blocks top-left move move-right move-down"></div>
@@ -314,10 +314,65 @@
                         </div>
                 </section>
 
-                <section id="contactPageSection" style="display: none">
-                    <main>
-                        <h1 style="color:black">This is contact page!</h1>
-                    </main>
+                <section id="contactPageSection" style="display: flex">
+                    <div class="hero-background">
+                        <div class="blocks top-left move move-right move-down"></div>
+                        <div class="blocks top-right move move-left"></div>
+                        <div class="blocks bottom-left move move-right"></div>
+                        <div class="blocks bottom-right move move-left"></div>
+                        <div class="blocks center move move-down"></div>
+                        <div class="blocks center-bottom-top-leftSide move move-right move-down"></div>
+                        <div class="blocks center-bottom-top-rightSide move move-left a"></div>
+                        <div class="blocks over-center move move-up"></div>
+                        <div class="blocks under-center move move-right"></div>
+                    </div>
+
+                    <div class="contact-hero">
+                        <div class="hero-container">
+
+                            <div class="contact-hero-content">
+                                <h1>Contact Me</h1>
+                                <p>Have feedback, a bug report, or want to collaborate?
+                                    I'd appreciate to hear from you!</p>
+                            </div>
+                            <div class="contact-hero-formMenu">
+                                <form action="">
+                                    <div class="reason-buttons">
+                                        <button class="bug-report">
+                                            🐛<span>Bug Report</span>
+                                        </button>
+                                        <button class="bug-report">
+                                            💡<span>Suggestion</span>
+                                        </button>
+                                        <button class="bug-report">
+                                            🫱🏻‍🫲🏻<span>Collaborate</span>
+                                        </button>
+                                        <button class="bug-report">
+                                            💬<span>General</span>
+                                        </button>
+                                    </div>
+                                    <div class="row first-row">
+                                        <label for="name">YOUR NAME</label>
+                                        <input type="text" id="name">
+                                        <label for="email">EMAIL ADDRESS</label>
+                                        <input type="text" id="email">
+                                    </div>
+                                    <div class="row second-row">
+                                        <label for="subject">SUBJECT</label>
+                                        <input type="text" id="subject">
+                                    </div>
+                                    <div class="row third-row">
+                                        <label for="message">MESSAGE</label>
+                                        <input type="text" id="message">
+                                    </div>
+                                    <input type="submit" value="SEND MESSAGE ✈">
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </section>
 
                 <footer>
