@@ -125,11 +125,13 @@
     height: 3.5rem;
 }
 .row input{
+    display:block;
     background: rgb(105 105 105 / 0.5);
     border: 0 solid;
     border-radius: 7px;
 }
-.row input:active{
-    border: 1px solid #1babdd;
-    box-shadow: 0 0 10px 2px rgb(27 171 221 / 0.6);
+.row input:focus{
+    outline: 0;
+    border: 2px solid #1babdd;
+    box-shadow: 0 0 30px 5px rgb(27 171 221 / 0.6);
 }
