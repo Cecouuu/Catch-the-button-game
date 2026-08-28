@@ -344,20 +344,24 @@
                                         <button class="reason-btn general">💬<span>General</span></button>
                                     </div>
                                     <div class="row first-row">
-                                        <label for="name">YOUR NAME</label>
-                                        <input type="text" id="name">
-                                        <label for="email">EMAIL ADDRESS</label>
-                                        <input type="text" id="email">
+                                        <div class="first-column">
+                                            <label for="name">YOUR NAME</label>
+                                            <input type="text" id="name" placeholder="Jorge Petrov">
+                                        </div>
+                                        <div class="second-column">
+                                            <label for="email">EMAIL ADDRESS</label>
+                                            <input type="text" id="email" placeholder="examlpe@gmail.com">
+                                        </div>
                                     </div>
                                     <div class="row second-row">
                                         <label for="subject">SUBJECT</label>
-                                        <input type="text" id="subject">
+                                        <input type="text" id="subject" placeholder="What is this about?">
                                     </div>
                                     <div class="row third-row">
                                         <label for="message">MESSAGE</label>
-                                        <input type="text" id="message">
+                                        <textarea id="message" placeholder="Write your message here..."></textarea>
                                     </div>
-                                    <input type="submit" value="SEND MESSAGE ✈">
+                                    <input class="submit" type="submit" value="SEND MESSAGE ✈">
                                 </form>
                             </div>
 

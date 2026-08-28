@@ -39,8 +39,8 @@
 }
 .hero-container{
     margin: 50px 0 0 0;
-    width: 43.75rem;
-    height: 48rem;
+    min-width: 43.75rem;
+    min-height: 48rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,13 +70,14 @@
     justify-content: center;
     align-items: start;
     width: 56.25rem;
-    height: 100%;
+    min-height: 100%;
 }
 .contact-form{
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: auto;
 }
 .reason-buttons{
     display: flex;
@@ -129,9 +130,32 @@
     background: rgb(105 105 105 / 0.5);
     border: 0 solid;
     border-radius: 7px;
+    width: 100%;
+    padding: 10px;
+    height: 3rem;
+}
+.row textarea {
+    display:block;
+    background: rgb(105 105 105 / 0.5);
+    border: 0 solid;
+    border-radius: 7px;
+    width: 100%;
+    padding: 10px;
+    height: clamp(3px, 3.01rem, 6rem);
+}
+.first-row .first-column{
+    width: 50%;
+    padding: 5px;
+}
+.first-row .second-column{
+    width: 50%;
+    padding: 5px;
 }
 .row input:focus{
     outline: 0;
     border: 2px solid #1babdd;
     box-shadow: 0 0 30px 5px rgb(27 171 221 / 0.6);
+}
+.third-row{
+    height: auto;
 }
