@@ -51,7 +51,8 @@
     font-family: Orbitron, sans-serif;
 }
 .contact-hero-content h1{
-    font-size: 68px;
+    font-size: 72px;
+    letter-spacing: 2px;
     color: transparent;
     background: var(--secondary-linear-gradient);
     background-clip: text;
@@ -125,37 +126,67 @@
     width: 100%;
     height: 3.5rem;
 }
+.row label{
+    padding: 5px;
+}
 .row input{
-    display:block;
+    color: var(--main-font-color);
+    font-family: Orbitron, sans-serif;
+    display: block;
     background: rgb(105 105 105 / 0.5);
-    border: 0 solid;
+    border: 1px solid rgb(128 128 128 / 0.55);
     border-radius: 7px;
     width: 100%;
-    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding: 14px;
     height: 3rem;
+    transition: 0.25s;
 }
 .row textarea {
-    display:block;
+    color: var(--main-font-color);
+    font-family: Orbitron, sans-serif;
+    display: block;
     background: rgb(105 105 105 / 0.5);
-    border: 0 solid;
+    border: 1px solid rgb(128 128 128 / 0.55);
     border-radius: 7px;
     width: 100%;
-    padding: 10px;
-    height: clamp(3px, 3.01rem, 6rem);
+    letter-spacing: 1.5px;
+    padding: 14px;
+    height: clamp(3px, 10rem, 10rem);
+    transition: 0.25s;
 }
 .first-row .first-column{
     width: 50%;
-    padding: 5px;
+    padding:  0 5px 0 0;
 }
 .first-row .second-column{
     width: 50%;
-    padding: 5px;
+    padding:  0 0 0 5px;
 }
 .row input:focus{
     outline: 0;
     border: 2px solid #1babdd;
     box-shadow: 0 0 30px 5px rgb(27 171 221 / 0.6);
 }
+.row textarea:focus{
+    outline: 0;
+    border: 2px solid #1babdd;
+    box-shadow: 0 0 30px 5px rgb(27 171 221 / 0.6);
+}
 .third-row{
     height: auto;
+}
+.submit{
+    background: linear-gradient(160deg, rgb(164 255 2 / 0.45), rgb(0 247 255 / 0.45), rgb(164 255 2 / 0.45));
+    width: 275px;
+    height: 50px;
+    font-family: Orbitron, sans-serif;
+    color: var(--main-font-color);
+    border-radius: 7px;
+    border: 1px solid rgb(0 250 154 / 0.55);
+    transition: 0.14s;
+}
+.submit:hover{
+    border-color: rgb(0 250 154 / 1);
 }
