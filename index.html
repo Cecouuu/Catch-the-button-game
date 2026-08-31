@@ -336,13 +336,14 @@
                                     I'd appreciate to hear from you!</p>
                             </div>
                             <div class="contact-hero-formMenu">
-                                <form class="contact-form">
+
                                     <div class="reason-buttons">
-                                        <button class="reason-btn bug-report">🐛<span>Bug Report</span></button>
-                                        <button class="reason-btn suggestion">💡<span>Suggestion</span></button>
-                                        <button class="reason-btn collaborate">🫱🏻‍🫲🏻<span>Collaborate</span></button>
-                                        <button class="reason-btn general">💬<span>General</span></button>
+                                        <button class="reason-btn bug-report" id="bug-report">🐛<span>Bug Report</span></button>
+                                        <button class="reason-btn suggestion" id="suggestion">💡<span>Suggestion</span></button>
+                                        <button class="reason-btn collaborate" id="collaborate">🫱🏻‍🫲🏻<span>Collaborate</span></button>
+                                        <button class="reason-btn general" id="general">💬<span>General</span></button>
                                     </div>
+                                <form class="contact-form" action="index.html">
                                     <div class="row first-row">
                                         <div class="first-column">
                                             <label for="name">YOUR NAME</label>
@@ -383,12 +384,12 @@
                             <p>© 2026 Catch The Button · All rights reserved</p>
                         </div>
                         <div class="footer-navigation">
-                            <ul class="footer-navigation-list">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Game</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Contact</a></li>
-                            </ul>
+                            <div class="footer-navigation-list">
+                                <button id="homeFooter">Home</button>
+                                <button id="gameFooter">Game</button>
+                                <button id="aboutFooter">About</button>
+                                <button id="contactFooter">Contact</button>
+                            </div>
                         </div>
                     </div>
                 </footer>
@@ -398,6 +399,7 @@
         <script src="scripts/navigationBar.js"></script>
         <script src="scripts/CatchTheButton.js"></script>
         <script src="scripts/ContactPageSubjectButtons.js"></script>
+        <script src="scripts/footerNavigation.js"></script>
     </body>
 
 </html>

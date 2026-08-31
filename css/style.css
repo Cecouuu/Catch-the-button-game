@@ -178,7 +178,6 @@ nav a{
     font-size: 14px;
 }
 .footer-navigation{
-    visibility: hidden;
 }
 .footer-navigation-list {
     display: flex;
@@ -186,16 +185,13 @@ nav a{
     justify-content: center;
     gap: 14px;
 }
-.footer-navigation ul{
+.footer-navigation .footer-navigation-list{
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0
 }
-.footer-navigation-list li {
-    list-style-type: none;
-}
-.footer-navigation-list li a{
+.footer-navigation-list button{
     letter-spacing: 1px;
     font-family: Rajdhani, sans-serif;
     color: rgba(255, 255, 255, 0.25);
@@ -203,6 +199,6 @@ nav a{
     font-size: 14px;
     transition: 0.2s;
 }
-.footer-navigation-list li a:hover{
+.footer-navigation-list button:hover{
     color: rgba(255, 255, 255, 0.75);
 }

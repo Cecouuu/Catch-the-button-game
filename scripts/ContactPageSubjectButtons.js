@@ -2,19 +2,28 @@ const inputSubject = document.querySelector("#subject");
 
 const buttons = [
     {
-        button: document.getElementsByClassName("bug-report"),
+        name: `Bug-report`,
+        button: document.querySelector("#bug-report"),
     },
     {
-        button: document.getElementsByClassName("suggestion"),
+        name: `Suggestion`,
+        button: document.querySelector("#suggestion"),
     },
     {
-        button: document.getElementsByClassName("collaborate"),
+        name: `Collaborate`,
+        button: document.querySelector("#collaborate"),
     },
     {
-        button: document.getElementsByClassName("general"),
+        name: `General`,
+        button: document.querySelector("#general"),
     },
 ]
 
-buttons.forEach((button) => {
-
+buttons.forEach((currentBtn) => {
+    currentBtn.button.addEventListener(`click`,function (){
+        changingSubjectText(currentBtn.name);
+    })
 })
+function changingSubjectText(nameOfTheSubject) {
+    inputSubject.value = `${nameOfTheSubject}`;
+}
