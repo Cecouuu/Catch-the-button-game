@@ -80,6 +80,7 @@
     align-items: center;
     flex-direction: column;
     height: auto;
+    width: 75%;
 }
 .reason-buttons{
     display: flex;
