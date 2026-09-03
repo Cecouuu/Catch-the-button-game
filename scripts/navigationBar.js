@@ -82,3 +82,9 @@ function footerBtnSelection(buttonOnNavBar,sectionPage,){
     }
     sectionPage.style.display = "flex";
 }
+
+const hamburgerMenuButton = document.querySelector(".hamburgerMenuButton");
+const hamburgerMenu = document.querySelector(".hamburgerMenu");
+hamburgerMenuButton.addEventListener("click",() =>{
+    hamburgerMenu.classList.add("hamburgerMenuActive");
+})
