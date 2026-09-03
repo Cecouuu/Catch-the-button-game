@@ -19,7 +19,7 @@
     align-items: start;
     justify-content: center;
     background-color: rgba(2, 10, 20, 1);
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
 }
 .gameHero {
@@ -29,7 +29,7 @@
     align-items: center;
     flex-direction: column;
     padding: 30px 24px;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     z-index: 1;
     position: static;

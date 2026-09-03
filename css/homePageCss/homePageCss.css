@@ -107,7 +107,7 @@
     align-items: center;
     justify-content: center;
     padding: 80px 24px 0;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     z-index: 1;
     position: relative;
@@ -223,7 +223,7 @@
 
 /*Feature section*/
 #features{
-    width: 100vw;
+    width: 100%;
     /*background-color: rgb(2 10 20 / 0.1);*/
     min-height: 850px;
     margin: 37px auto 0;

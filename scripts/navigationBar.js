@@ -84,7 +84,10 @@ function footerBtnSelection(buttonOnNavBar,sectionPage,){
 }
 
 const hamburgerMenuButton = document.querySelector(".hamburgerMenuButton");
-const hamburgerMenu = document.querySelector(".hamburgerMenu");
+const hamburgerMenu = document.querySelector("#hamburgerMenu");
 hamburgerMenuButton.addEventListener("click",() =>{
-    hamburgerMenu.classList.add("hamburgerMenuActive");
+    for(let i = 0; i < 1; i++){
+        hamburgerMenu.classList.remove("hamburgerMenuActivate")
+    }
+    hamburgerMenu.classList.add("hamburgerMenuActivate");
 })

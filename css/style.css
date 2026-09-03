@@ -21,7 +21,6 @@
     padding:0;
     box-sizing:border-box;
     scroll-behavior: smooth;
-
 }
 
 :root{
@@ -176,19 +175,19 @@ nav a{
     height: 8px;
 }
 .hamburgerMenu{
-    width: 35vw;
+    width: 35%;
     min-width: 500px;
-    display: none;
-    background: #252525;
+    min-height: 100vh;
+    display: flex;
+    background: red;
     z-index: 1001;
     position: fixed;
     right: 0;
-    transform: translateX(100%);
+    transform: translateX(1000px);
     transition: 0.25s;
 }
 .hamburgerMenuActivate {
-    display: flex;
-    transform: translateX(0%);
+    transform: translateX(0);
     transition: 0.25s;
 }
 @media (max-width: 930px){
@@ -214,7 +213,7 @@ nav a{
     display: flex;
     justify-content: space-between;
     align-items:center;
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 60px;
     background-color: rgb(2, 10, 20, 1);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
