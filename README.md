@@ -89,7 +89,7 @@ While building this project I practiced:
 
 Created by
 
-**Cvetoslav Krumov**
+**Tsvetoslav Krumov**
 
 2026
 
@@ -99,6 +99,6 @@ Created by
 
 This project is published for educational and portfolio purposes only.
 
-Copyright © 2026 Cvetoslav Krumov
+Copyright © 2026 Tsvetoslav Krumov
 
 All Rights Reserved.
