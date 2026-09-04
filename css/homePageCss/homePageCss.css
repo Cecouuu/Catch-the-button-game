@@ -223,7 +223,7 @@
 
 /*Feature section*/
 #features{
-    width: 100%;
+    min-width: 100%;
     /*background-color: rgb(2 10 20 / 0.1);*/
     min-height: 850px;
     margin: 37px auto 0;
@@ -237,7 +237,7 @@
 .features-container{
     z-index: 2;
     padding: 80px 24px 100px;
-    max-width: 1100px;
+    min-width: 1100px;
     margin: 25px 0 30px;
     display: flex;
     align-items: center;
@@ -257,15 +257,18 @@
 }
 #features .cards{
     display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: auto auto auto;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 35px;
+    width:1100px;
 }
 #features .card {
     padding: 36px 30px;
-    max-width: 750px;
-    max-height: 400px;
-    width: 100%;
+    /*min-width: 100px;*/
+    min-height: 350px;
+    /*max-width: 350px;*/
+    /*width: 100%;*/
+    width: clamp(100px, 100%, 350px);
     height: 100%;
     border-radius: 18px;
     cursor: default;
@@ -370,7 +373,4 @@
 .features-container button:hover{
     transform: scale(1.08);
     box-shadow: 0 0 25px 10px rgb(0 255 241 / 0.35);
-}
-@media(max-width: 930px){
-
 }

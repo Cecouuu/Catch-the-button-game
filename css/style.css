@@ -57,7 +57,7 @@ body{
 header{
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 999;
     background-color: rgb(2, 10, 20, 1);
 }
 nav{
@@ -175,12 +175,12 @@ nav a{
     height: 8px;
 }
 .hamburgerMenu{
-    width: 35%;
-    min-width: 500px;
-    min-height: 100vh;
+    width: 30%;
+    min-width: 400px;
+    min-height: 100%;
     display: flex;
     background: red;
-    z-index: 1001;
+    z-index: 1000;
     position: fixed;
     right: 0;
     transform: translateX(1000px);
@@ -204,6 +204,12 @@ nav a{
         flex-direction: column;
         gap: 25px;
     }
+    #features .cards {
+        grid-template-columns: auto;
+    }
+    #features .card {
+        height: auto;
+    }
 }
 
 /*footer */
@@ -218,7 +224,7 @@ nav a{
     background-color: rgb(2, 10, 20, 1);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
     padding: 14px 25px;
-    z-index: 1000;
+    z-index: 999;
 }
 
 .footer-container a {
