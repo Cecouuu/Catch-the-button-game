@@ -91,3 +91,46 @@ hamburgerMenuButton.addEventListener("click",() =>{
     }
     hamburgerMenu.classList.add("hamburgerMenuActivate");
 })
+
+const hamburgerNavBarButtons = [
+    {
+        btn: document.querySelector("#hamburgerHomeBtn"),
+        section: homePageSection,
+    },
+    {
+        btn: document.querySelector("#hamburgerGameBtn"),
+        section: gamePageSection,
+    },
+    {
+        btn: document.querySelector("#hamburgerAboutBtn"),
+        section: aboutPageSection,
+    },
+    {
+        btn: document.querySelector("#hamburgerContactBtn"),
+        section: contactPageSection,
+    },
+]
+
+hamburgerNavBarButtons.forEach(function (button){
+    button.btn.addEventListener(`click`,() => {
+        btnSelection2(button.btn, button.section);
+    });
+})
+
+function btnSelection2(buttonOnNavBar,sectionPage,){
+    for(let i = 0; i < hamburgerNavBarButtons.length; i++){
+        // classList.add is adding a specific class from CSS to the HTML element.
+        // when is used classList it is selecting the classes that has or not the chosen element.
+        // if there is no element it will work  as well, and with add you can add classes to the element or remote it or toggle that adds and removes when is clicked!
+
+        hamburgerNavBarButtons[i].btn.classList.remove("hamburgerNavButtonsActive");
+        hamburgerNavBarButtons[i].section.style.display = "none";
+    }
+    sectionPage.style.display = "flex";
+    buttonOnNavBar.classList.add("hamburgerNavButtonsActive");
+}
+
+const hamburgerCloseBtn = document.querySelector("#hamburgerCloseBtn");
+hamburgerCloseBtn.addEventListener(`click`, function (){
+    hamburgerMenu.classList.remove("hamburgerMenuActivate");
+})
