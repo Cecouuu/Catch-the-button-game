@@ -13,7 +13,18 @@
 /*Unauthorized copying, redistribution or claiming this project as your own is prohibited.*/
 /*--------------------------------------------------*/
 
-@media (max-width: 0px){
+@media (max-width: 380px){
+    .hamburgerNavButtonsActive{
+        width: 100%;
+        translateX(0%);
+    }
+    .hero-content h1{
+        font-size: 3.25rem;
+    }
+    .hero-content p:last-child {
+        width: 200px;
+        font-size: 0.9rem;
+    }
 }
 @media (max-width: 930px){
     .hamburgerMenuButton{
@@ -31,5 +42,16 @@
     }
     #features .card {
         height: auto;
+    }
+    .hero-buttons{
+        flex-direction: column;
+        height: auto;
+    }
+    .hero-stats{
+        flex-direction: column;
+        height: auto;
+    }
+    .footer-container .copyright{
+        text-align: center;
     }
 }

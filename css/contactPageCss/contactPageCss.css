@@ -40,8 +40,6 @@
 }
 .hero-container{
     margin: 50px 0 0 0;
-    min-width: 43.75rem;
-    min-height: 48rem;
     display: flex;
     justify-content: center;
     align-items: center;

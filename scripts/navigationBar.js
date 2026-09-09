@@ -134,3 +134,12 @@ const hamburgerCloseBtn = document.querySelector("#hamburgerCloseBtn");
 hamburgerCloseBtn.addEventListener(`click`, function (){
     hamburgerMenu.classList.remove("hamburgerMenuActivate");
 })
+const homePagePlayBtns = '';
+homePagePlayBtns.forEach(function (playButtons){
+    playButtons.addEventListener(`click`, function (){
+        for(let i = 0; i < navBarButtons.length; i++){
+            navBarButtons[i].section.style.display = "none";
+        }
+        gamePageSection.style.display = "flex";
+    })
+})
