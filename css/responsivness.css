@@ -13,17 +13,22 @@
 /*Unauthorized copying, redistribution or claiming this project as your own is prohibited.*/
 /*--------------------------------------------------*/
 
-@media (max-width: 380px){
-    .hamburgerNavButtonsActive{
+@media (max-width: 400px){
+    .hamburgerMenu {
         width: 100%;
+    }
+    .hamburgerNavButtonsActive{
         translateX(0%);
     }
     .hero-content h1{
         font-size: 3.25rem;
     }
     .hero-content p:last-child {
-        width: 200px;
+        width: 300px;
         font-size: 0.9rem;
+    }
+    #features .card--red {
+        background-color: rgb(246 24 3 / 0.15);
     }
 }
 @media (max-width: 930px){

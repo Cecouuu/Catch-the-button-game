@@ -134,12 +134,48 @@ const hamburgerCloseBtn = document.querySelector("#hamburgerCloseBtn");
 hamburgerCloseBtn.addEventListener(`click`, function (){
     hamburgerMenu.classList.remove("hamburgerMenuActivate");
 })
-const homePagePlayBtns = '';
-homePagePlayBtns.forEach(function (playButtons){
-    playButtons.addEventListener(`click`, function (){
+
+const heroPlayBtn = document.querySelector("#heroPlayBtn");
+const featuresPlayBtn = document.querySelector("#featuresPlayBtn");
+const navarPlayBtn = document.querySelector("#navBarPlayBtn");
+
+const homePagePlayButtons = [
+    {
+        btn: heroPlayBtn,
+    },
+    {
+        btn: featuresPlayBtn,
+    },
+    {
+        btn: navarPlayBtn,
+    }
+]
+homePagePlayButtons.forEach(function (playButtons){
+    playButtons.btn.addEventListener(`click`, function (){
         for(let i = 0; i < navBarButtons.length; i++){
+            navBarButtons[i].btn.classList.add("nav-list-button")
+            navBarButtons[i].btn.classList.remove("active");
             navBarButtons[i].section.style.display = "none";
+
+            hamburgerNavBarButtons[i].btn.classList.remove("hamburgerNavButtonsActive");
         }
         gamePageSection.style.display = "flex";
+        hamburgerNavBarButtons[1].btn.classList.add("hamburgerNavButtonsActive");
+        navBarButtons[1].btn.classList.add("active")
     })
+})
+
+const heroHowToPLay = document.querySelector("#heroHowToPLay");
+
+heroHowToPLay.addEventListener(`click`, () =>{
+    for(let y = 0; y < navBarButtons.length; y++){
+        navBarButtons[y].btn.classList.add("nav-list-button")
+        navBarButtons[y].btn.classList.remove("active");
+        navBarButtons[y].section.style.display = "none";
+
+        hamburgerNavBarButtons[y].btn.classList.remove("hamburgerNavButtonsActive");
+    }
+    aboutPageSection.style.display = "flex";
+    hamburgerNavBarButtons[2].btn.classList.add("hamburgerNavButtonsActive");
+    navBarButtons[2].btn.classList.add("active")
 })
