@@ -43,7 +43,7 @@
     flex-direction: column;
     margin: 0 0 25px 0;
     width: clamp(250px, 100%, 850px);
-    height: clamp(600px, 100%, 900px);
+    height: clamp(600px, auto, 1225px);
     border-radius: 14px;
     border: 1px solid #14B8A6FF;
     box-shadow: 0 0 50px 15px rgba(20, 184, 166, 0.22);
@@ -65,7 +65,7 @@
     padding: 20px;
     text-align: center;
     height: auto;
-    width: clamp(200px, auto, 350px);
+    width: clamp(450px, 100%, 650px);
     font-size: clamp(12px, 5vw + 5px, 16px);
 }
 #CurrentGameModeBox{
@@ -86,11 +86,18 @@
 }
 .gameDisplay{
     min-width: 100%;
-    min-height: 200px;
+    height: clamp(800px, 100%, 900px);
     display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.gameMenu_Stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
 }
 .currentGameMode {
     display: flex;
@@ -123,7 +130,7 @@
     align-content: center;
     height: auto;
     flex-wrap: wrap;
-    min-width: 700px;
+    width: clamp(300px, 100%, 825px);
     gap: 10px;
 }
 .box{
@@ -161,7 +168,7 @@
 
 .cardGame{
     width: clamp(300px, 100%, 950px);
-    min-height: 250px;
+    height: clamp(800px, 100%, 1025px);
     background-color: transparent;
     border: 0;
 }
@@ -184,19 +191,19 @@
     100% {box-shadow: 0 0 0 0 rgb(20 184 66 / 0.44);}
 }
 
-#gameArea{
-    background-image: url('tools/images/game_background.jpg');
+.gameArea{
     border-radius: 12px;
     border: 2px solid #14B8A6FF;
     margin-top: 10px;
-    height: 18rem;
-    width: 35rem;
+    height: clamp(250px, 100%, 450px);
+    width: clamp(200px,  100%, 725px);
     position: relative;
 }
-.form-group #gameOver{
+#gameOver{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 14px 0 0 0;
     color: #f30d0d;
 }
 #btnCatchMe {
