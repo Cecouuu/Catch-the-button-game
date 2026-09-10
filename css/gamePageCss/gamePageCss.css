@@ -42,8 +42,8 @@
     justify-content: center;
     flex-direction: column;
     margin: 0 0 25px 0;
-    width: clamp(350px, 100%, 850px);
-    height: clamp(600px, 100%, 700px);
+    width: clamp(250px, 100%, 850px);
+    height: clamp(600px, 100%, 900px);
     border-radius: 14px;
     border: 1px solid #14B8A6FF;
     box-shadow: 0 0 50px 15px rgba(20, 184, 166, 0.22);
@@ -55,9 +55,18 @@
     flex-direction: column;
     text-align: center;
 }
-#WelcomeMessage p{
+#WelcomeMessage h1{
+    padding: 20px;
     text-align: center;
-    width: 450px;
+    height: auto;
+    width: clamp(200px, auto, 250px);
+}
+#WelcomeMessage p{
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    width: clamp(200px, auto, 350px);
+    font-size: clamp(12px, 5vw + 5px, 16px);
 }
 #CurrentGameModeBox{
     justify-content: center;
@@ -66,9 +75,14 @@
     color: var(--main-font-color);
 }
 .difficultyBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 14px;
     padding: 24px;
     gap: 14px;
+    height: auto;
 }
 .gameDisplay{
     min-width: 100%;
@@ -77,6 +91,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.currentGameMode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
 }
 .difficultyButton{
     cursor: pointer;
@@ -100,7 +121,8 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 100px;
+    height: auto;
+    flex-wrap: wrap;
     min-width: 700px;
     gap: 10px;
 }
@@ -108,8 +130,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 125px;
     height: 85px;
+    text-align: center;
     border-radius: 14px;
     border: 1px solid #14B8A6FF;
     background: rgba(255, 255, 255, 0.05);
@@ -122,8 +145,10 @@
     align-items: center;
     justify-items: center;
     margin: 0;
+    text-align: center;
 }
-.box p span{
+.box p b span{
+    text-align: center;
     margin-left: 5px;
 }
 #finalPoints{
@@ -135,7 +160,7 @@
 }
 
 .cardGame{
-    min-width: 950px;
+    width: clamp(300px, 100%, 950px);
     min-height: 250px;
     background-color: transparent;
     border: 0;
