@@ -64,7 +64,7 @@
 }
 .hero-content h1{
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 10px;
     width: clamp(100px, 100%, 850px);
     font-size: clamp(1.5rem, 3vw + 3.5rem, 10rem);
     color: transparent;
@@ -79,9 +79,9 @@
     font-family: "Sans Serif Collection", serif;
     color: darkgrey;
     width:clamp(300px, 100%, 700px);
-    line-height: 1.3;
+    line-height: 1.75;
     letter-spacing: 1.5px;
-    font-size: clamp(1rem, 1vw + 0.3rem, 1.5rem)
+    font-size: clamp(1rem, 1vw + 0.1rem, 1.5rem)
 }
 .hero-buttons{
     display: flex;
@@ -190,11 +190,11 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 35px;
-    height: auto;
+    height: clamp(300px, 100%, 1200px);
 }
 #features .card {
     width: clamp(100px, 100%, 350px);
-    height: clamp(200px, 100%, 360px);
+    height: clamp(300px, 100%, 450px);
     padding: 36px 30px;
     border-radius: 18px;
     cursor: default;

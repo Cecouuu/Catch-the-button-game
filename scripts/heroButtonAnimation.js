@@ -1,11 +1,11 @@
-const navBarPlayBtn = document.querySelector("#navBarPlayBtn");
+const heroPlayBtn = document.querySelector("#heroPlayBtn");
 let blur = 0;
 let spread = 0;
 let boxShadowCount = 0;
 let growing = false;
 
 running = setInterval(() => {
-    navBarPlayBtn.style.boxShadow = `0 0 ${blur}px ${spread}px rgb(0 255 241 / 0.25)`;
+    heroPlayBtn.style.boxShadow = `0 0 ${blur}px ${spread}px rgb(0 255 241 / 0.25)`;
         if (growing){
             increaseShadow();
         }
@@ -17,7 +17,7 @@ function increaseShadow (){
     if (boxShadowCount >= 7) {
         setTimeout(() => {
             growing = false;
-        },125);
+        },155);
         return;
     }
     boxShadowCount++;

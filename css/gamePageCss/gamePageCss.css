@@ -61,11 +61,11 @@
     height: auto;
     width: clamp(200px, auto, 250px);
 }
-#WelcomeMessage p{
+.game-description{
     padding: 20px;
     text-align: center;
     height: auto;
-    width: clamp(450px, 100%, 650px);
+    width: clamp(250px, 100%, 650px);
     font-size: clamp(12px, 5vw + 5px, 16px);
 }
 #CurrentGameModeBox{
