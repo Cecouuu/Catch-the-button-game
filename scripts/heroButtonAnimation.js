@@ -1,4 +1,5 @@
 const heroPlayBtn = document.querySelector("#heroPlayBtn");
+
 let blur = 0;
 let spread = 0;
 let boxShadowCount = 0;

@@ -294,7 +294,7 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
         function timerForGame (){
             timer = setInterval(function (){
                 time--;
-                if(time >= 0){
+                if(time > 0){
                     updateColorsForPoints();
                     timerText.textContent = `${time}`;
                 }
@@ -417,11 +417,13 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
             clearInterval(timer);
             resetGame();
             displayGame.style.display = "none";
-            btnStartGame.style.display = "flex";
+            btnStartGame.style.display = "block";
             WelcomeMessage.style.display = "flex";
             CurrentGameModeBox.style.display = "flex";
             EmptyGameModeAlert.style.display = "none";
             btnBack.style.display = "none";
+            currentGameMode = undefined;
+            DisplayCurrentGameMode.textContent = undefined;
         }
 
     btnBack.addEventListener("click", backToStartMenu);

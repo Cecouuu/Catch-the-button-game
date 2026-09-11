@@ -176,6 +176,8 @@
     margin-top: 10px;
     min-height: 45px;
     min-width: 100px;
+    color: var(--main-font-color);
+    text-align: center;
     background: var(--secondary-linear-gradient);
     border: 1px solid var(--secondary-linear-gradient);
     border-radius: 14px;

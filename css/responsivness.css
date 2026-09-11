@@ -14,7 +14,9 @@
 /*--------------------------------------------------*/
 
 @media (max-width: 450px){
-
+    .blocks{
+        box-shadow: 0 0 200px 65px rgb(0 255 241 / 0.25);
+    }
 }
 @media (max-width: 400px){
     .hamburgerMenu {
@@ -35,6 +37,12 @@
     }
 }
 @media (max-width: 930px){
+    #block1, #block3, #block6, #block7{
+        display: none;
+    }
+    .blocks{
+        box-shadow: 0 0 300px 65px rgb(0 255 241 / 0.75);
+    }
     .hamburgerMenuButton{
         display: flex;
     }

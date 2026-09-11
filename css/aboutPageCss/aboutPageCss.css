@@ -16,27 +16,27 @@
 
 #aboutPageSection {
     position:relative;
-    display: none;
-    align-items: start;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: rgba(2, 10, 20, 1);
-    min-width: 100%;
-    min-height: 100vh;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    z-index: 2;
 }
 .about-hero{
-    letter-spacing: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    letter-spacing: 1px;
+    position: static;
     padding: 30px 24px;
     margin: 20px 0 0 0 ;
-    min-width: 100%;
-    min-height: 100vh;
     z-index: 1;
-    position: static;
-    background-color: rgb(2 10 20 / 0.4);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
+    width: 100%;
+    height: auto;
 }
 .about-hero-content{
     text-align: Center;

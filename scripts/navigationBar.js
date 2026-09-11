@@ -135,13 +135,13 @@ hamburgerCloseBtn.addEventListener(`click`, function (){
     hamburgerMenu.classList.remove("hamburgerMenuActivate");
 })
 
-const heroPlayBtn = document.querySelector("#heroPlayBtn");
+const heroPlayBtns  = document.querySelector("#heroPlayBtn");
 const featuresPlayBtn = document.querySelector("#featuresPlayBtn");
 const navarPlayBtn = document.querySelector("#navBarPlayBtn");
 
 const homePagePlayButtons = [
     {
-        btn: heroPlayBtn,
+        btn: heroPlayBtns,
     },
     {
         btn: featuresPlayBtn,
