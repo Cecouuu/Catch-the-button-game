@@ -33,29 +33,32 @@
     position: static;
     padding: 30px 24px;
     margin: 20px 0 0 0 ;
-    z-index: 1;
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
     width: 100%;
     height: auto;
 }
 .about-hero-content{
-    text-align: Center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     letter-spacing: 2px;
 }
 .about-hero-content h1{
     font-family: Orbitron, sans-serif;
-    font-size: 4.25rem;
+    font-size: clamp(2.5rem, 5vh + 2rem, 4.25rem);
+    text-align: center;
     color: transparent;
     background: linear-gradient(160deg, rgb(8 244 161 / 0.85), rgb(20 237 13 / 0.85));
     background-clip: text;
     -webkit-background-clip: text;
 }
 .about-hero-content p {
+    width: clamp(400px, 100%,750px);
     margin: 25px 0;
     font-family: sans-serif;
     color: dimgray;
     text-align: center;
-    width: 750px;
 }
 .about-hero-content p span{
     color: var(--main-font-color);
@@ -66,6 +69,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    height: auto;
     margin: 50px 0 0 0;
 }
 .about-how-to-play h1{
