@@ -35,6 +35,9 @@
     #features .card--red {
         background-color: rgb(246 24 3 / 0.15);
     }
+    .about-article-text p{
+        font-size: 0.8rem;
+    }
 }
 @media (max-width: 930px){
     #block1, #block3, #block6, #block7{
