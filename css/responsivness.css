@@ -17,8 +17,27 @@
     .blocks{
         box-shadow: 0 0 200px 65px rgb(0 255 241 / 0.25);
     }
+    .levels-boxes{
+        margin: 25px;
+    }
 }
 @media (max-width: 400px){
+    .first-row .first-column{
+        width: 100%;
+        padding: 0;
+    }
+    .first-row .second-column{
+        width: 100%;
+        padding: 0;
+    }
+    .gameArea{
+        width: 300px;
+        height: 200px;
+    }
+    #btnCatchMe{
+        width: 50px;
+        height: 50px;
+    }
     .hamburgerMenu {
         width: 100%;
     }

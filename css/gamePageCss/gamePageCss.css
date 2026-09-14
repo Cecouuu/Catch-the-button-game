@@ -197,8 +197,8 @@
     border-radius: 12px;
     border: 2px solid #14B8A6FF;
     margin-top: 10px;
-    height: clamp(250px, 100%, 450px);
-    width: clamp(200px,  100%, 725px);
+    height: 450px;
+    width: 725px;
     position: relative;
 }
 #gameOver{
