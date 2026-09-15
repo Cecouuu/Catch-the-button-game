@@ -32,11 +32,10 @@
     flex-direction: column;
     padding: 30px 24px;
     margin: 20px 0 0 0 ;
-    min-height: 100vh;
     z-index: 1;
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
     width: 100vw;
-    height: clamp(1000px, 100vh, 100vh);
+    height: clamp(1000px, auto, auto);
     position: relative;
     background-color: rgb(2 10 20 / 0.1);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
@@ -131,7 +130,7 @@
 }
 .row{
     margin: 25px 0 30px 0;
-    width: 100%;
+    width: clamp(220px, 100%, 100%);
     height: auto;
 }
 .row label{
@@ -158,10 +157,10 @@
     background: rgb(105 105 105 / 0.5);
     border: 1px solid rgb(128 128 128 / 0.55);
     border-radius: 7px;
-    width: 100%;
     letter-spacing: 1.5px;
     padding: 14px;
-    height: clamp(3px, 10rem, 10rem);
+    width: clamp(220px, 100%, 100%);
+    height: clamp(48px, 160px, 160px);
     transition: 0.25s;
 }
 .first-row{

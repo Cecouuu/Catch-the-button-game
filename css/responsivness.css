@@ -14,7 +14,14 @@
 /*--------------------------------------------------*/
 
 @media (max-width: 610px){
-
+    .gameArea{
+        width: 375px;
+    }
+}
+@media (max-width: 430px){
+    .gameArea{
+        width: 330px;
+    }
 }
 @media (max-width: 450px){
     .blocks{
