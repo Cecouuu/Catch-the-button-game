@@ -34,18 +34,19 @@
     margin: 20px 0 0 0 ;
     z-index: 1;
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
-    width: 100vw;
+    width: clamp(300px, 100%, 100vw);
     height: clamp(1000px, auto, auto);
     position: relative;
     background-color: rgb(2 10 20 / 0.1);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
 }
-.hero-container{
+.contact-hero-container{
     margin: 50px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 .contact-hero-content{
     display: flex;
@@ -55,8 +56,10 @@
     font-family: Orbitron, sans-serif;
 }
 .contact-hero-content h1{
-    font-size: 72px;
+    padding: 10px;
+    font-size: clamp(42px, 5vw + 45px,72px);
     letter-spacing: 2px;
+    text-align: center;
     color: transparent;
     background: var(--secondary-linear-gradient);
     background-clip: text;
@@ -65,9 +68,9 @@
 .contact-hero-content p {
     margin: 20px 0;
     font-size: 14px;
-    width:clamp(300px, 100%, 425px);
+    width: clamp(300px, 100%, 425px);
     text-align: center;
-    color:dimgray;
+    color: dimgray;
 }
 .contact-hero-formMenu{
     margin: 75px 0 25px 0;
@@ -84,7 +87,7 @@
     align-items: center;
     flex-direction: column;
     height: auto;
-    width: 100%;
+    width: clamp(300px, 100%, 100%);
 }
 .reason-buttons{
     display: flex;
@@ -128,29 +131,30 @@
     transition: 0.14s;
     border-color: rgb(73 141 236 / 0.75);
 }
-.row{
+.rows{
     margin: 25px 0 30px 0;
     width: clamp(220px, 100%, 100%);
     height: auto;
 }
-.row label{
+.rows label{
     padding: 5px;
 }
-.row input{
+.rows input{
     color: var(--main-font-color);
     font-family: Orbitron, sans-serif;
     display: block;
     background: rgb(105 105 105 / 0.5);
     border: 1px solid rgb(128 128 128 / 0.55);
     border-radius: 7px;
-    width: 100%;
+    width: clamp(250px, 100%, 100%);
     font-size: 14px;
     letter-spacing: 1.5px;
     padding: 14px;
+    margin: 0 5px;
     height: clamp(30px, 100%, 100px);
     transition: 0.25s;
 }
-.row textarea {
+.rows textarea {
     color: var(--main-font-color);
     font-family: Orbitron, sans-serif;
     display: block;
@@ -159,6 +163,7 @@
     border-radius: 7px;
     letter-spacing: 1.5px;
     padding: 14px;
+    margin: 0 5px;
     width: clamp(220px, 100%, 100%);
     height: clamp(48px, 160px, 160px);
     transition: 0.25s;
@@ -171,6 +176,9 @@
     width: clamp(300px, 100%, 100%);
     height: auto;
 }
+.second-row .third-row{
+    margin-top: 0;
+}
 .first-row .first-column{
     height: auto;
     width: 50%;
@@ -181,12 +189,12 @@
     width: 50%;
     padding:  0 0 0 5px;
 }
-.row input:focus{
+.rows input:focus{
     outline: 0;
     border: 2px solid #1babdd;
     box-shadow: 0 0 30px 5px rgb(27 171 221 / 0.6);
 }
-.row textarea:focus{
+.rows textarea:focus{
     outline: 0;
     border: 2px solid #1babdd;
     box-shadow: 0 0 30px 5px rgb(27 171 221 / 0.6);
