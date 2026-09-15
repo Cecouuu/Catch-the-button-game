@@ -13,6 +13,9 @@
 /*Unauthorized copying, redistribution or claiming this project as your own is prohibited.*/
 /*--------------------------------------------------*/
 
+@media (max-width: 610px){
+
+}
 @media (max-width: 450px){
     .blocks{
         box-shadow: 0 0 200px 65px rgb(0 255 241 / 0.25);
@@ -31,7 +34,7 @@
         padding: 0;
     }
     .gameArea{
-        width: 300px;
+        width: 250px;
         height: 200px;
     }
     #btnCatchMe{

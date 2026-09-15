@@ -29,7 +29,7 @@
     justify-content: center;
     padding: 80px 24px 0;
     width: 100vw;
-    height: clamp(1000px, 100vh, 100vh);
+    height: clamp(1000px, 100%, 100%);
     position: relative;
     background-color: rgb(2 10 20 / 0.1);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
@@ -86,7 +86,7 @@
 }
 .gameDisplay{
     min-width: 100%;
-    height: clamp(800px, 100%, 900px);
+    height: auto;
     display: none;
     justify-content: center;
     align-items: center;
@@ -148,9 +148,6 @@
 .box p {
     color: var(--main-font-color);
     font-family: Orbitron, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-items: center;
     margin: 0;
     text-align: center;
 }
@@ -158,17 +155,21 @@
     text-align: center;
     margin-left: 5px;
 }
+#highScore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
 #finalPoints{
-    text-align: center;
-    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
 }
-#finalPoints #finalPointsColor{
-    width: fit-content;
-}
-
 .cardGame{
     width: clamp(300px, 100%, 950px);
-    height: clamp(800px, 100%, 1025px);
+    height: clamp(800px, auto, 1025px);
     background-color: transparent;
     border: 0;
 }
@@ -193,12 +194,12 @@
     100% {box-shadow: 0 0 0 0 rgb(20 184 66 / 0.44);}
 }
 
-.gameArea{
+.gameArea {
     border-radius: 12px;
     border: 2px solid #14B8A6FF;
-    margin-top: 10px;
-    height: 450px;
-    width: 725px;
+    margin: 10px 25px 0 ;
+    height: clamp(450px, 100vh, 425px);
+    width: clamp(250px, 100vw,  550px);
     position: relative;
 }
 #gameOver{

@@ -246,6 +246,7 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
         function playSound (sound){
             sound.currentTime = 0;
             sound.play();
+            sound.volume = 0.2;
         }
 
         function calcGameArea (){
