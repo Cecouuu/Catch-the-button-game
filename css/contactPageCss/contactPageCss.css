@@ -87,7 +87,7 @@
     align-items: center;
     flex-direction: column;
     height: auto;
-    width: clamp(300px, 100%, 100%);
+    width: clamp(300px, 100%, 750px);
 }
 .reason-buttons{
     display: flex;

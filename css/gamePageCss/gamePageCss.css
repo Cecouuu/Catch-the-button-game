@@ -28,9 +28,10 @@
     align-items: center;
     justify-content: center;
     padding: 80px 24px 0;
-    width: 100vw;
-    height: clamp(1000px, 100%, 100%);
+    width: 100%;
+    height: auto;
     position: relative;
+    z-index: 1;
     background-color: rgb(2 10 20 / 0.1);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
     letter-spacing: 1px;
@@ -149,23 +150,21 @@
     color: var(--main-font-color);
     font-family: Orbitron, sans-serif;
     margin: 0;
-    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .box p b span{
     text-align: center;
     margin-left: 5px;
 }
-#highScore{
+#highScoreColor #finalPointsColor{
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: auto;
-}
-#finalPoints{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    width: auto;
 }
 .cardGame{
     width: clamp(300px, 100%, 950px);
@@ -198,7 +197,7 @@
     border-radius: 12px;
     border: 2px solid #14B8A6FF;
     margin: 10px 25px 0 ;
-    height: clamp(450px, 100vh, 425px);
+    height: clamp(425px, 100vh, 450px);
     width: clamp(250px, 100vw,  550px);
     position: relative;
 }
