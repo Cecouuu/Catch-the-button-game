@@ -446,19 +446,3 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
     btnStartGame.addEventListener("click", startGame);
 
     btnPlayAgain.addEventListener("click", playAgain);
-
-// const scores =[10,25,14,35];
-// let lastDigit = scores.pop();
-// let newScore= scores.map((score, index, fullScore) => {
-//     return `${score} - ${lastDigit} = ${score - lastDigit}`;
-// })
-//
-// console.log(newScore);
-
-// const scores =[10,25,14,35];
-// let lastDigit = scores.pop();
-// let newScore= scores.map((score, index, fullScore) => {
-//     return `${score} - ${score[fullScore.length + 1]} = ${score - (score[fullScore.length + 1])}`;
-// })
-//
-// console.log(newScore);
