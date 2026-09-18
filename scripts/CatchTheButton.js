@@ -274,11 +274,15 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
             btnCatchMe.style.height = originalBtnCatchMeHeight - originalBtnCatchMeHeight * currentDifficulty.size  + "px"
         }
 
-        function setColorForPoints(score){
-            for (let i = currentGameMode.difficulties.length - 1; i >= 0; i--){
-                if (score >= currentGameMode.difficulties[i].points){
-                    return currentGameMode.difficulties[i].color;
-                }
+        function setColorForPoints(chosenScore){
+            // for (let i = currentGameMode.difficulties.length - 1; i >= 0; i--){
+            //     if (score >= currentGameMode.difficulties[i].points){
+            //         return currentGameMode.difficulties[i].color;
+            //     }
+            // }
+           const matchedDifficulty = currentGameMode.difficulties.map((difficulty, index, fullArray) => difficulty[fullArray.length - index]).find((difficulty) => chosenScore >= difficulty.points);
+            if(matchedDifficulty){
+                return matchedDifficulty.color;
             }
         }
 
