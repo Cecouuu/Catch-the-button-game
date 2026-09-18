@@ -275,14 +275,12 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
         }
 
         function setColorForPoints(chosenScore){
-            // for (let i = currentGameMode.difficulties.length - 1; i >= 0; i--){
-            //     if (score >= currentGameMode.difficulties[i].points){
-            //         return currentGameMode.difficulties[i].color;
-            //     }
-            // }
-           const matchedDifficulty = currentGameMode.difficulties.map((difficulty, index, fullArray) => difficulty[fullArray.length - index]).find((difficulty) => chosenScore >= difficulty.points);
+           const matchedDifficulty = [...currentGameMode.difficulties].reverse().find((difficulty) => chosenScore >= difficulty.points);
             if(matchedDifficulty){
                 return matchedDifficulty.color;
+            }
+            else{
+                console.log(`Error with color for points function!`);
             }
         }
 
