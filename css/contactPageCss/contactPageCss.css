@@ -35,7 +35,7 @@
     z-index: 1;
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
     width: clamp(300px, 100%, 100vw);
-    height: clamp(1000px, auto, auto);
+    height: 100vh;
     position: relative;
     background-color: rgb(2 10 20 / 0.1);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);

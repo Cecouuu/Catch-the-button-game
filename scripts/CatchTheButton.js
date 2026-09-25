@@ -297,7 +297,7 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
         function timerForGame (){
             timer = setInterval(function (){
                 time--;
-                if(time > 0){
+                if(time >= 0){
                     updateColorsForPoints();
                     timerText.textContent = `${time}`;
                 }
@@ -427,6 +427,9 @@ Unauthorized copying, redistribution or claiming this project as your own is pro
             btnBack.style.display = "none";
             currentGameMode = undefined;
             DisplayCurrentGameMode.textContent = undefined;
+            gameModeButtons.forEach((item) => {
+                item.button.classList.remove(`activeDifficultyButton`);
+            })
         }
 
     btnBack.addEventListener("click", backToStartMenu);

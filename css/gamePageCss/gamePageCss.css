@@ -27,15 +27,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 24px 0;
+    padding: 10px 24px 0;
     width: 100%;
-    height: auto;
-    position: relative;
+    height: 100vh;
     z-index: 1;
+    position: relative;
     background-color: rgb(2 10 20 / 0.1);
     border-bottom: 1px solid rgba(20, 184, 166, 0.22);
-    letter-spacing: 1px;
-    flex-direction: column;
 }
 .gameStartingMenu{
     display: flex;
