@@ -18,7 +18,7 @@ The objective is simple:
 
 ## ✨ Features
 
-- Three difficulty modes
+- Three difficulty mode
   - Easy
   - Medium
   - Hard
