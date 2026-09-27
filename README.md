@@ -1,6 +1,6 @@
 # 🎯 Catch Me Game
 
-A browser-based JavaScript reflex game where the player must click a moving button before time runs out.
+A browser-based JavaScript reflex game where the player must click a moving button before time run out.
 
 ---
 
