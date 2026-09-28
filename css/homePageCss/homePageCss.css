@@ -22,8 +22,9 @@
     justify-content: center;
     flex-direction: column;
     width: 100vw;
-    height: clamp(100vh, auto, auto);
+    height: clamp(100vh, 100%, 100%);
     z-index: 2;
+    flex: 1;
 }
 
 #hero{
@@ -32,7 +33,7 @@
     justify-content: center;
     padding: 80px 24px 0;
     width: 100%;
-    height: clamp(100vh, auto, auto);
+    height: clamp(100vh, 100%, 100%);
     z-index: 1;
     position: relative;
     background-color: rgb(2 10 20 / 0.1);
