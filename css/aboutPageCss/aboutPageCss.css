@@ -21,8 +21,8 @@
     justify-content: center;
     flex-direction: column;
     width: 100vw;
-    height: auto;
     z-index: 2;
+    flex: 1;
 }
 .about-hero{
     display: flex;
@@ -33,9 +33,8 @@
     position: static;
     padding: 30px 24px;
     margin: 20px 0 0 0 ;
-    border-bottom: 1px solid rgba(20, 184, 166, 0.22);
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 .about-hero-content{
     display:flex;
