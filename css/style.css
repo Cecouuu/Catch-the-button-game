@@ -195,7 +195,7 @@ nav a{
     width: 38.5vw;
     min-width: 300px;
     min-height: 100%;
-    padding: 20px;
+    /*padding: 20px;*/
     display: flex;
     align-items: center;
     justify-content: start;
@@ -208,6 +208,13 @@ nav a{
     top: 0;
     transform: translateX(100%);
     transition: 0.45s;
+}
+.hamMenuSecondBg{
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(135deg, rgb(34 197 94 / 0.7), rgb(20 184 166 / 0.7), rgb(30 236 197 / 0.7));;
+    display: flex;
+    flex: 1;
 }
 .hamburgerMenuActivate {
     transform: translateX(0%);
@@ -237,22 +244,22 @@ nav a{
     min-width: 100%;
     min-height: auto;
     gap: 14px;
-    background: rgba(2, 10, 20, 0.95);
+    /*background: rgba(2, 10, 20, 0.95);*/
 }
 .hamburgerNavButtons {
     min-width: 100%;
     min-height: 75px;
     text-align: center;
-    background: linear-gradient(175deg, rgba(2, 10, 20, 0.7) 0%, rgb(3 202 34 / 0.5) 50%,rgba(2, 10, 20, 0.7) 100%);
-    border: 1px solid rgb(0 255 39 / 0.9);
+    background: linear-gradient(175deg, rgba(2, 10, 20, 0.7) 0%, rgb(40 244 98 / 0.5) 50%,rgba(2, 10, 20, 0.7) 100%);
+    border: 1px solid rgb(40 244 98 / 0.9);
     border-radius: 14px;
     color: var(--main-font-color);
     font-family: Orbitron, sans-serif;
     transition: 0.25s;
 }
 .hamburgerNavButtonsActive{
-    border: 1px solid rgb(1 246 7 / 0.5);
-    box-shadow: 0 0 10px 3px rgb(9 255 0 / 0.8);
+    border: 1px solid rgb(40 244 98 / 0.5);
+    box-shadow: 0 0 10px 3px rgb(40 244 98 / 0.8);
     transition: 0.25s;
 }
 

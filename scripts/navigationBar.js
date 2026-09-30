@@ -128,6 +128,7 @@ function btnSelection2(buttonOnNavBar,sectionPage,){
     }
     sectionPage.style.display = "flex";
     buttonOnNavBar.classList.add("hamburgerNavButtonsActive");
+    hamburgerMenu.classList.remove("hamburgerMenuActivate");
 }
 
 const hamburgerCloseBtn = document.querySelector("#hamburgerCloseBtn");
