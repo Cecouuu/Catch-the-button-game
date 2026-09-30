@@ -76,9 +76,8 @@ While building this project I practiced:
 
 ## 🚀 Future Improvements
 
-- Animations
+- Optimised code in JavaScript!
 - Better UI Design
-- Mobile improvements
 - Better sound management
 - Statistics page
 - Leaderboards
@@ -93,6 +92,8 @@ Created by
 
 2026
 
+<p>Started date: 27.06.2026.<br><br>
+Date of finish: 29.09.2026.<br></p>
 ---
 
 ## 📄 License
